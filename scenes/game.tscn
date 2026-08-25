@@ -7,6 +7,12 @@ size = Vector2(338, 18)
 
 [node name="Game" type="Node2D" unique_id=933420174]
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=32300992]
+limit_left = 0
+limit_top = 0
+limit_right = 1920
+limit_bottom = 1080
+
 [node name="Floor" type="StaticBody2D" parent="." unique_id=1578533700]
 position = Vector2(0, 544)
 
