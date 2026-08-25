@@ -1,2 +1,3 @@
 res://scenes/game.tscn
 res://entities/player.tscn
+res://scripts/player.gd

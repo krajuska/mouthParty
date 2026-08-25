@@ -22,7 +22,6 @@ animations = [{
 size = Vector2(160, 160)
 
 [node name="Player" type="CharacterBody2D" unique_id=1607665172]
-position = Vector2(-24, 32)
 script = ExtResource("1_merdl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1185069243]
