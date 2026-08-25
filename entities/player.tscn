@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://wbxtlcmxqrg5"]
+
+[ext_resource type="Script" uid="uid://blsg7g2moi1t4" path="res://scripts/player.gd" id="1_merdl"]
+[ext_resource type="Texture2D" uid="uid://vm3jhb6s8mrw" path="res://sprites/banana.png" id="2_b0kkn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4p34"]
+atlas = ExtResource("2_b0kkn")
+region = Rect2(0, 0, 160, 160)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lqmls"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4p34")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqmls"]
+size = Vector2(160, 160)
+
+[node name="Player" type="CharacterBody2D" unique_id=1607665172]
+position = Vector2(-24, 32)
+script = ExtResource("1_merdl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1185069243]
+sprite_frames = SubResource("SpriteFrames_lqmls")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=370981118]
+shape = SubResource("RectangleShape2D_lqmls")
+debug_color = Color(0.8058162, 0.7181643, 0, 0.41960785)
