@@ -1,25 +1,28 @@
 [gd_scene format=3 uid="uid://d0xyrn75sgimg"]
 
 [ext_resource type="PackedScene" uid="uid://wbxtlcmxqrg5" path="res://entities/player.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://bh7jbvm2x32yy" path="res://sushi.png" id="1_yqjtg"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq06d"]
-size = Vector2(338, 18)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqmls"]
+size = Vector2(2018, 88)
 
 [node name="Game" type="Node2D" unique_id=933420174]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=32300992]
-limit_left = 0
-limit_top = 0
-limit_right = 1920
-limit_bottom = 1080
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=441058145]
+layer = -1
 
-[node name="Floor" type="StaticBody2D" parent="." unique_id=1578533700]
-position = Vector2(0, 544)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=2133339080]
-position = Vector2(159, 1)
-shape = SubResource("RectangleShape2D_kq06d")
-debug_color = Color(0, 0.7596861, 0.35849306, 0.41960785)
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=458017268]
+offset_top = -1536.0
+offset_right = 1920.0
+offset_bottom = 1164.0
+texture = ExtResource("1_yqjtg")
 
 [node name="Player" parent="." unique_id=1607665172 instance=ExtResource("1_uwrxv")]
-position = Vector2(80, 96)
+position = Vector2(1048, 80)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1706838652]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor" unique_id=1012571252]
+position = Vector2(1007, 1124)
+shape = SubResource("RectangleShape2D_lqmls")
+debug_color = Color(0, 0, 0, 0.41960785)
