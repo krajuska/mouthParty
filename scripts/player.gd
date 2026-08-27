@@ -9,12 +9,16 @@ func _physics_process(delta: float) -> void:
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += DOWN_VELOCITY
-		var direction := Input.get_axis("ui_left", "ui_right")
-		if direction:
-			velocity.x = direction * SPEED
+		var sides := Input.get_axis("ui_left", "ui_right")
+		var down := Input.get_axis("ui_down", "")
+		if sides:
+			velocity.x = sides * SPEED
+		elif down:
+			velocity.y = down * SPEED * -4
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
+	
 		move_and_slide()
 
 	# Get the input direction and handle the movement/deceleration.
