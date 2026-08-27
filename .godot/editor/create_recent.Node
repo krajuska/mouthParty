@@ -1,5 +1,5 @@
-TileMapLayer
 CollisionShape2D
+TileMapLayer
 StaticBody2D
 Camera2D
 AnimatedSprite2D
