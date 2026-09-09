@@ -2,14 +2,31 @@ extends CharacterBody2D
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @export var level: int = 1
+@export var food_type: String = ""
 var has_triggered := false # prevents spawning every physics frame while still touching
 
 const SPEED = 300.0
 const DOWN_VELOCITY = Vector2(0, 0.5)
 
+var food_data: FoodData = null
+
 func _ready() -> void:
 	SpawnManager.last_spawned = self
+	_update_visual_from_food()
+	animated_sprite_2d.animation_finished.connect(_on_animation_finished)
 
+func _on_animation_finished() -> void:
+	print("finished animation: ", animated_sprite_2d.animation)
+
+	if animated_sprite_2d.animation != "idle":
+		animated_sprite_2d.play("idle")
+		
+func _update_visual_from_food() -> void:
+	if food_data == null or food_data.sprite_frames == null:
+		return
+	animated_sprite_2d.sprite_frames = food_data.sprite_frames
+	animated_sprite_2d.play("idle")
+	
 func _input(event):
 	if position.x >= 0 && position.x <= 1920 && not is_on_floor():
 		if Input.is_action_just_pressed("ui_left"):
@@ -18,6 +35,32 @@ func _input(event):
 			position.x += 162
 
 func _physics_process(delta):
+	if not is_on_floor():
+		velocity += DOWN_VELOCITY
+
+		var sides := Input.get_axis("ui_left", "ui_right")
+		var down := Input.get_axis("ui_down", "")
+		if down:
+			velocity.y = down * SPEED * -6
+		else:
+			velocity.x = move_toward(velocity.x, 0, SPEED)
+
+	move_and_slide()
+
+	if not SpawnManager.is_last_spawned(self) or has_triggered:
+		return
+
+	# check body-to-body collisions FIRST
+	for i in get_slide_collision_count():
+		var collider = get_slide_collision(i).get_collider()
+		if collider is CharacterBody2D and collider != self:
+			_on_touch(collider)
+			return
+
+	# only treat as a floor touch if nothing else was hit
+	if is_on_floor():
+		_on_touch(null)
+		return
 	if not is_on_floor():
 		velocity += DOWN_VELOCITY
 		
@@ -49,45 +92,16 @@ func _physics_process(delta):
 
 func _on_touch(touched_body: Node) -> void:
 	has_triggered = true
-	var new_level := level  # default if only touching floor
+	var new_level := level
 
 	if touched_body != null:
 		SpawnManager.apply_bonus_for_body(touched_body)
-		new_level = touched_body.level + 1  # inherit from the one below it, +1
+		new_level = touched_body.level + 1
+
+	animated_sprite_2d.play("splat")
 
 	if SpawnManager.check_stop_conditions(new_level):
 		SpawnManager.game_over = true
 		return
 
 	SpawnManager.spawn_new(new_level)
-	
-#func _apply_bonus_from(body: Node) -> void:
-	## Identify WHICH kind of body it was — groups are the cleanest way
-	#if body.is_in_group("spicy_block"):
-		#_apply_bonus("spice")
-	#elif body.is_in_group("fresh_group"):
-		#_apply_bonus("fresh")
-	#elif body.is_in_group("dairy_block"):
-		#_apply_bonus("lactose")
-	#elif body.is_in_group("neutral_block"):
-		#_apply_bonus("neutralize")
-	#elif body.is_in_group("full_block"):
-		#_apply_bonus("fullness")
-	#else:
-		#_apply_bonus("generic")
-#
-##types of bonus we'll have:
-##spice: for peppers (+X spicyness)
-##fresh: for peppermint (-X bad breath)
-##neutralize: for dairy products (-X spicyness)
-##fullness: banana, flex seeds (+X full)
-#func _apply_bonus(bonus_type: String) -> void:
-	#match bonus_type:
-		#"spice":
-			#pass # e.g. score += 100
-		#"fresh":
-			#pass # e.g. health -= 10
-		#"neutralize":
-			#pass
-		#"fullness":
-			#pass

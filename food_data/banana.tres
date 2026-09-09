@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://dr0n825tm8er2"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_a708r"]
+[ext_resource type="SpriteFrames" uid="uid://cm05jg5aogtju" path="res://sprites/banana/banana_animations.tres" id="2_nx0hf"]
+
+[resource]
+script = ExtResource("1_a708r")
+food_name = "banana"
+sprite_frames = ExtResource("2_nx0hf")
+spiciness = -2
+bad_breath = 2
+freshness = -5
+fullness = 5
+metadata/_custom_type_script = "uid://beujfqord0qj0"

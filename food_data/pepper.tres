@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cxo8u5tetxhh4"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_gofvq"]
+[ext_resource type="SpriteFrames" uid="uid://devceicrxcmel" path="res://sprites/pepper/pepper_animations.tres" id="2_p1rcg"]
+
+[resource]
+script = ExtResource("1_gofvq")
+food_name = "pepper"
+sprite_frames = ExtResource("2_p1rcg")
+spiciness = 20
+bad_breath = 1
+freshness = -5
+fullness = 1
+metadata/_custom_type_script = "uid://beujfqord0qj0"

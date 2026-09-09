@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vm3jhb6s8mrw"
-path="res://.godot/imported/banana.png-9c8f644b34135862bade7a849bd7996d.ctex"
+uid="uid://c04i6lop17dk"
+path="res://.godot/imported/Peppermint rotate  5.png-4e23552c70edf59836e66c0ab865b25a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/banana.png"
-dest_files=["res://.godot/imported/banana.png-9c8f644b34135862bade7a849bd7996d.ctex"]
+source_file="res://sprites/peppermint/Peppermint rotate  5.png"
+dest_files=["res://.godot/imported/Peppermint rotate  5.png-4e23552c70edf59836e66c0ab865b25a.ctex"]
 
 [params]
 

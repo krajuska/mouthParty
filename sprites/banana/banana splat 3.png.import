@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cc0sq53ht5goa"
-path="res://.godot/imported/green.png-656e452538eec42f12fdd2fccb1b1800.ctex"
+uid="uid://n1ypch6vwjyw"
+path="res://.godot/imported/banana splat 3.png-879fb3932933fd9fd260e47cbad38ace.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/green.png"
-dest_files=["res://.godot/imported/green.png-656e452538eec42f12fdd2fccb1b1800.ctex"]
+source_file="res://sprites/banana/banana splat 3.png"
+dest_files=["res://.godot/imported/banana splat 3.png-879fb3932933fd9fd260e47cbad38ace.ctex"]
 
 [params]
 
