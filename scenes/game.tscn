@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://d0xyrn75sgimg"]
+
+[ext_resource type="PackedScene" uid="uid://wbxtlcmxqrg5" path="res://entities/player.tscn" id="1_uwrxv"]
+[ext_resource type="Texture2D" uid="uid://bh7jbvm2x32yy" path="res://sushi.png" id="1_yqjtg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cjf25"]
+size = Vector2(210, 1404.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqmls"]
+size = Vector2(2018, 88)
+
+[node name="Game" type="Node2D" unique_id=933420174]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=441058145]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=458017268]
+offset_top = -1536.0
+offset_right = 1920.0
+offset_bottom = 1164.0
+texture = ExtResource("1_yqjtg")
+
+[node name="Player" parent="." unique_id=1607665172 instance=ExtResource("1_uwrxv")]
+position = Vector2(1042, 80)
+
+[node name="Floor" type="StaticBody2D" parent="." unique_id=1706838652]
+
+[node name="LeftWall" type="CollisionShape2D" parent="Floor" unique_id=826972353]
+position = Vector2(371, 473.5)
+shape = SubResource("RectangleShape2D_cjf25")
+
+[node name="RightWall" type="CollisionShape2D" parent="Floor" unique_id=1549783529]
+position = Vector2(1713, 494.25)
+shape = SubResource("RectangleShape2D_cjf25")
+
+[node name="Floor" type="CollisionShape2D" parent="Floor" unique_id=1012571252]
+position = Vector2(1007, 1124)
+shape = SubResource("RectangleShape2D_lqmls")
+debug_color = Color(0, 0, 0, 0.41960785)

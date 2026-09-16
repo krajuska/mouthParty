@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cucrk5sic7sur"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_h7rkd"]
+[ext_resource type="SpriteFrames" uid="uid://cmv10c0hvfwxh" path="res://sprites/peppermint/peppermint_animations.tres" id="2_h6a71"]
+
+[resource]
+script = ExtResource("1_h7rkd")
+food_name = "peppermint"
+sprite_frames = ExtResource("2_h6a71")
+spiciness = -5
+bad_breath = -20
+freshness = 20
+fullness = 1
+bully = -1
+metadata/_custom_type_script = "uid://beujfqord0qj0"

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://wbxtlcmxqrg5"]
+
+[ext_resource type="Script" uid="uid://blsg7g2moi1t4" path="res://scripts/player.gd" id="1_merdl"]
+[ext_resource type="SpriteFrames" uid="uid://cm05jg5aogtju" path="res://sprites/banana/banana_animations.tres" id="2_b0kkn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lqmls"]
+size = Vector2(160, 160)
+
+[node name="Player" type="CharacterBody2D" unique_id=1607665172]
+script = ExtResource("1_merdl")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1185069243]
+sprite_frames = ExtResource("2_b0kkn")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.66388893
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=370981118]
+shape = SubResource("RectangleShape2D_lqmls")
