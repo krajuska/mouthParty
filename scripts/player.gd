@@ -45,8 +45,6 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	move_and_slide()
-
 	if not SpawnManager.is_last_spawned(self) or has_triggered:
 		return
 
@@ -71,8 +69,6 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	move_and_slide()
-
 	# Only the most recently spawned body should trigger new spawns
 	if not SpawnManager.is_last_spawned(self) or has_triggered:
 		return
@@ -89,6 +85,8 @@ func _physics_process(delta):
 		if collider is CharacterBody2D and collider != self:
 			_on_touch(collider)
 			return
+			
+	move_and_slide()
 
 func _on_touch(touched_body: Node) -> void:
 	has_triggered = true
@@ -102,6 +100,7 @@ func _on_touch(touched_body: Node) -> void:
 
 	if SpawnManager.check_stop_conditions(new_level):
 		SpawnManager.game_over = true
+		print("game over")
 		return
 
 	SpawnManager.spawn_new(new_level)

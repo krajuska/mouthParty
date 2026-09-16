@@ -8,3 +8,4 @@ extends Resource
 @export var bad_breath: int = 0
 @export var freshness: int = 0
 @export var fullness: int = 0
+@export var bully: int = 0

@@ -13,6 +13,7 @@ const SCORE_LIMITS := {
 	"bad_breath": 100,
 	"freshness": 100,
 	"fullness": 100,
+	"bully": 2
 }
 
 var food_list: Array[FoodData] = []
@@ -24,6 +25,7 @@ var scores := {
 	"bad_breath": 0,
 	"freshness": 0,
 	"fullness": 0,
+	"bully": 0
 }
 
 func _ready() -> void:
@@ -65,13 +67,14 @@ func apply_bonus_for_body(body: Node) -> void:
 	var food: FoodData = body.food_data
 	if food == null:
 		return
-	print("bad_breath value: ", food.bad_breath)
-	print("scores type: ", typeof(scores), " value: ", scores)
-	scores["spiciness"]  += food.spiciness
-	scores["lactose"]    += food.lactose
-	scores["bad_breath"] += food.bad_breath
-	scores["freshness"]  += food.freshness
-	scores["fullness"]   += food.fullness
+	#scores["spiciness"]  += food.spiciness
+	#scores["lactose"]    += food.lactose
+	#scores["bad_breath"] += food.bad_breath
+	#scores["freshness"]  += food.freshness
+	#scores["fullness"]   += food.fullness
+	scores["bully"]       += food.bully
+	print("scored bully, \nbully value:")
+	print(scores["bully"])
 	scores_updated.emit(scores)
 	
 func check_stop_conditions(new_level: int) -> bool:
