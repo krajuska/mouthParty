@@ -1,6 +1,0 @@
-res://scenes/game.tscn
-res://food_data/food.gd
-res://food_data/peppermint.tres
-res://food_data/pepper.tres
-res://SpawnManager.gd
-res://scripts/player.gd

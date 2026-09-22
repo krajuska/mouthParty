@@ -9,3 +9,4 @@ extends Resource
 @export var freshness: int = 0
 @export var fullness: int = 0
 @export var bully: int = 0
+@export var peace: int = 0
