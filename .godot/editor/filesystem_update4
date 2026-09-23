@@ -1,0 +1,5 @@
+res://scenes/game.tscn
+res://food_data/food.gd
+res://SpawnManager.gd
+res://food_data/banana.tres
+res://scripts/player.gd

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var is_initial_spawn: bool = false
+#@export var is_initial_spawn: bool = false
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @export var level: int = 0
 var has_triggered := false # prevents spawning every physics frame while still touching
@@ -12,13 +12,6 @@ var food_data: FoodData = null
 
 func _ready() -> void:
 	animated_sprite_2d.animation_finished.connect(_on_animation_finished)
-
-	if is_initial_spawn:
-		SpawnManager.spawn_new(0)
-		queue_free()
-		return
-
-	SpawnManager.last_spawned = self
 	_update_visual_from_food()
 	
 func _on_animation_finished() -> void:
@@ -50,7 +43,7 @@ func _physics_process(delta):
 			velocity.y = down * SPEED * -6
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
-
+#
 	if not SpawnManager.is_last_spawned(self) or has_triggered:
 		return
 
@@ -68,22 +61,15 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity += DOWN_VELOCITY
 		
-		var sides := Input.get_axis("ui_left", "ui_right")
-		var down := Input.get_axis("ui_down", "")
-		if down:
-			velocity.y = down * SPEED * -6
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	# Only the most recently spawned body should trigger new spawns
-	if not SpawnManager.is_last_spawned(self) or has_triggered:
-		return
+	var sides := Input.get_axis("ui_left", "ui_right")
+	var down := Input.get_axis("ui_down", "")
+	if down:
+		velocity.y = down * SPEED * -6
+	else:
+		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	if is_on_floor():
 		_on_touch(self)
-		return
-		
-	if not SpawnManager.is_last_spawned(self) or has_triggered:
 		return
 
 	for i in get_slide_collision_count():
@@ -96,17 +82,15 @@ func _physics_process(delta):
 
 func _on_touch(touched_body: Node) -> void:
 	has_triggered = true
-	var new_level := level
 
 	if touched_body != null:
 		SpawnManager.apply_bonus_for_body(touched_body)
-		new_level = touched_body.level + 1
 
 	animated_sprite_2d.play("splat")
 
-	if SpawnManager.check_stop_conditions(new_level):
+	if SpawnManager.check_stop_conditions():
 		SpawnManager.game_over = true
 		print("game over")
 		return
 
-	SpawnManager.spawn_new(new_level)
+	SpawnManager.spawn_new()

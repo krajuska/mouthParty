@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://d0xyrn75sgimg"]
 
 [ext_resource type="Script" uid="uid://bkbu1u0wp2ao0" path="res://scenes/game.gd" id="1_lnu2h"]
-[ext_resource type="PackedScene" uid="uid://wbxtlcmxqrg5" path="res://entities/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://bh7jbvm2x32yy" path="res://sushi.png" id="1_yqjtg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cjf25"]
@@ -21,9 +20,6 @@ offset_top = -1536.0
 offset_right = 1920.0
 offset_bottom = 1164.0
 texture = ExtResource("1_yqjtg")
-
-[node name="Player" parent="." unique_id=1607665172 instance=ExtResource("1_uwrxv")]
-position = Vector2(1042, 80)
 
 [node name="Floor" type="StaticBody2D" parent="." unique_id=1706838652]
 
