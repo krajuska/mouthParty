@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
+@export var is_initial_spawn: bool = false
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@export var level: int = 1
-@export var food_type: String = ""
+@export var level: int = 0
 var has_triggered := false # prevents spawning every physics frame while still touching
 
 const SPEED = 300.0
@@ -11,10 +11,16 @@ const DOWN_VELOCITY = Vector2(0, 0.5)
 var food_data: FoodData = null
 
 func _ready() -> void:
-	SpawnManager.last_spawned = self
-	_update_visual_from_food()
 	animated_sprite_2d.animation_finished.connect(_on_animation_finished)
 
+	if is_initial_spawn:
+		SpawnManager.spawn_new(0)
+		queue_free()
+		return
+
+	SpawnManager.last_spawned = self
+	_update_visual_from_food()
+	
 func _on_animation_finished() -> void:
 	print("finished animation: ", animated_sprite_2d.animation)
 
@@ -57,7 +63,7 @@ func _physics_process(delta):
 
 	# only treat as a floor touch if nothing else was hit
 	if is_on_floor():
-		_on_touch(null)
+		_on_touch(self)
 		return
 	if not is_on_floor():
 		velocity += DOWN_VELOCITY
@@ -74,7 +80,7 @@ func _physics_process(delta):
 		return
 
 	if is_on_floor():
-		_on_touch(null)
+		_on_touch(self)
 		return
 		
 	if not SpawnManager.is_last_spawned(self) or has_triggered:

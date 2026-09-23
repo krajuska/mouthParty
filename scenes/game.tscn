@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://d0xyrn75sgimg"]
 
+[ext_resource type="Script" uid="uid://bkbu1u0wp2ao0" path="res://scenes/game.gd" id="1_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://wbxtlcmxqrg5" path="res://entities/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://bh7jbvm2x32yy" path="res://sushi.png" id="1_yqjtg"]
 
@@ -10,6 +11,7 @@ size = Vector2(210, 1404.5)
 size = Vector2(2018, 88)
 
 [node name="Game" type="Node2D" unique_id=933420174]
+script = ExtResource("1_lnu2h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=441058145]
 layer = -1
@@ -37,3 +39,9 @@ shape = SubResource("RectangleShape2D_cjf25")
 position = Vector2(1007, 1124)
 shape = SubResource("RectangleShape2D_lqmls")
 debug_color = Color(0, 0, 0, 0.41960785)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=174483314]
+offset_left = 1352.0
+offset_top = 64.0
+offset_right = 1704.0
+offset_bottom = 312.0
