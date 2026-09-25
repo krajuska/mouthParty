@@ -1,5 +1,5 @@
-res://scenes/game.tscn
-res://food_data/food.gd
+res://entities/player.tscn
+res://sprites/_template_animations.tres
 res://SpawnManager.gd
-res://food_data/banana.tres
 res://scripts/player.gd
+res://scenes/game.gd

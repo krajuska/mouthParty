@@ -13,7 +13,6 @@ const SCORE_LIMITS := {
 }
 
 var food_list: Array[FoodData] = []
-var last_spawned: CharacterBody2D = null
 var game_over := false
 var scores := {
 	"bully": 0,
@@ -49,21 +48,14 @@ func spawn_new() -> CharacterBody2D:
 	new_body.food_data = chosen_food
 
 	get_tree().current_scene.add_child(new_body)
-	last_spawned = new_body
 	return new_body
-	
-
-func is_last_spawned(body: Node) -> bool:
-	return body == last_spawned
 	
 func apply_bonus_for_body(body: Node) -> void:
 	var food: FoodData = body.food_data
 	if food == null:
 		return
 	scores["bully"]       += food.bully
-	scores["peace"]       += food.peace
-	print("scored bully, \nbully value:")
-	print(scores["bully"])
+	scores["bully"]       -= food.peace
 	scores_updated.emit(scores)
 	
 func check_stop_conditions() -> bool:

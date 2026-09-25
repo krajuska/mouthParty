@@ -1,11 +1,5 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://bwp5ajd7jv483"]
 
-[ext_resource type="Texture2D" uid="uid://djq6eijd4htd" path="res://sprites/pepper/green 1.png" id="1_os1fa"]
-[ext_resource type="Texture2D" uid="uid://bsiole6x6iafr" path="res://sprites/pepper/green 2.png" id="2_evf4g"]
-[ext_resource type="Texture2D" uid="uid://bwq2tppd6kv6d" path="res://sprites/pepper/green 3.png" id="3_yrv52"]
-[ext_resource type="Texture2D" uid="uid://qhidrvm87hhb" path="res://sprites/pepper/green 4.png" id="4_s57m5"]
-[ext_resource type="Texture2D" uid="uid://ctuvb0r7f653r" path="res://sprites/pepper/green 5.png" id="5_t0tws"]
-
 [resource]
 animations = [{
 "frames": [],
@@ -13,22 +7,7 @@ animations = [{
 "name": &"falling",
 "speed": 5.0
 }, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_os1fa")
-}, {
-"duration": 1.0,
-"texture": ExtResource("2_evf4g")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_yrv52")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_s57m5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_t0tws")
-}],
+"frames": [],
 "loop": 1,
 "name": &"idle",
 "speed": 5.0

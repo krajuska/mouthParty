@@ -44,7 +44,7 @@ func _physics_process(delta):
 		else:
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 #
-	if not SpawnManager.is_last_spawned(self) or has_triggered:
+	if has_triggered:
 		return
 
 	# check body-to-body collisions FIRST
@@ -84,7 +84,7 @@ func _on_touch(touched_body: Node) -> void:
 	has_triggered = true
 
 	if touched_body != null:
-		SpawnManager.apply_bonus_for_body(touched_body)
+		SpawnManager.apply_bonus_for_body(self)
 
 	animated_sprite_2d.play("splat")
 
