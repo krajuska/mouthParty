@@ -7,9 +7,5 @@
 script = ExtResource("1_h7rkd")
 food_name = "peppermint"
 sprite_frames = ExtResource("2_h6a71")
-spiciness = -5
-bad_breath = -20
-freshness = 20
-fullness = 1
 peace = 1
 metadata/_custom_type_script = "uid://beujfqord0qj0"
