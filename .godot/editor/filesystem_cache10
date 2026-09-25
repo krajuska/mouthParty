@@ -1,22 +1,23 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1790295123
+::res://::1790299842
 icon.svg::CompressedTexture2D::4371090979139180016::1784178694::1784178749::1::::<><><>0<>0<>d84d25fbb889a4afefba0a784f4e4a04<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-SpawnManager.gd::GDScript::7333617690429440627::1790204085::0::1::::<>Node<><>0<>0<><>::
+SpawnManager.gd::GDScript::7333617690429440627::1790296737::0::1::::<>Node<><>0<>0<><>::
 sushi.png::CompressedTexture2D::2944352038804674404::1789582300::1789582300::1::::<><><>0<>0<>7dc0819691f2dfb64b15b57c85311920<>res://.godot/imported/sushi.png-c535393b329c858b36c7219d73e1e31c.ctex::
-::res://entities/::1789582315
-player.tscn::PackedScene::1547649940131663902::1789582300::0::1::::<><><>0<>0<><>::uid://blsg7g2moi1t4::::res://scripts/player.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
-::res://food_data/::1790204327
-banana.tres::Resource/FoodData::8404931554237371413::1790204322::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
+::res://entities/::1790297753
+player.tscn::PackedScene::1547649940131663902::1790297753::0::1::::<><><>0<>0<><>::uid://blsg7g2moi1t4::::res://scripts/player.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
+::res://food_data/::1790297689
+banana.tres::Resource/FoodData::8404931554237371413::1790297683::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
 food.gd::GDScript::2709019858009125539::1790199549::0::1::::FoodData<>Resource<><>0<>0<><>::
-pepper.tres::Resource/FoodData::6418127041517007695::1789582300::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://devceicrxcmel::::res://sprites/pepper/pepper_animations.tres
-peppermint.tres::Resource/FoodData::6181798646345467297::1790105417::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cmv10c0hvfwxh::::res://sprites/peppermint/peppermint_animations.tres
-::res://scenes/::1790204322
-game.gd::GDScript::3091635358432140605::1790106596::0::1::::<>Node2D<><>0<>0<><>::
+pepper.tres::Resource/FoodData::6418127041517007695::1790297683::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://devceicrxcmel::::res://sprites/pepper/pepper_animations.tres
+peppermint.tres::Resource/FoodData::6181798646345467297::1790297683::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cmv10c0hvfwxh::::res://sprites/peppermint/peppermint_animations.tres
+::res://scenes/::1790297740
+game.gd::GDScript::3091635358432140605::1790297736::0::1::::<>Node2D<><>0<>0<><>::
 game.tscn::PackedScene::8962952130320921422::1790204322::0::1::::<><><>0<>0<><>::uid://bkbu1u0wp2ao0::::res://scenes/game.gd<>uid://bh7jbvm2x32yy::::res://sushi.png
-::res://scripts/::1790203732
-player.gd::GDScript::3196078568060187755::1790203728::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://sprites/::1789582315
-_template_animations.tres::SpriteFrames::3963362898635089258::1789582300::0::1::::<><><>0<>0<><>::uid://djq6eijd4htd::::res://sprites/pepper/green 1.png<>uid://bsiole6x6iafr::::res://sprites/pepper/green 2.png<>uid://bwq2tppd6kv6d::::res://sprites/pepper/green 3.png<>uid://qhidrvm87hhb::::res://sprites/pepper/green 4.png<>uid://ctuvb0r7f653r::::res://sprites/pepper/green 5.png
+::res://scripts/::1790296301
+player.gd::GDScript::3196078568060187755::1790296301::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://sprites/::1790299842
+_template_animations.tres::SpriteFrames::3963362898635089258::1790295872::0::1::::<><><>0<>0<><>::
+sushi-1.png::CompressedTexture2D::8733206189820909590::1789616382::1790299893::1::::<><><>0<>0<>b075ab022b745540fc7e46f00e055119<>res://.godot/imported/sushi-1.png-69c5b2847f05f1049e49fbfcb309fabe.ctex::
 ::res://sprites/banana/::1789582315
 banana fall 1.png::CompressedTexture2D::734135762405042216::1789582300::1789582300::1::::<><><>0<>0<>039b7f7db354562729222c49a6b539ce<>res://.godot/imported/banana fall 1.png-510dd103ea4afebaee4c85cb1ec08f0a.ctex::
 banana fall 2.png::CompressedTexture2D::3520909259388487485::1789582300::1789582300::1::::<><><>0<>0<>7339a18445c44500ff2334336c1fb48d<>res://.godot/imported/banana fall 2.png-58179a5d9cabd636ae003c45a9812785.ctex::
@@ -29,7 +30,58 @@ banana splat 2.png::CompressedTexture2D::5116349881034114705::1789582300::178958
 banana splat 3.png::CompressedTexture2D::967612900932712074::1789582300::1789582300::1::::<><><>0<>0<>97b2bc536862c12f831ffa0e9fc1ff6e<>res://.godot/imported/banana splat 3.png-879fb3932933fd9fd260e47cbad38ace.ctex::
 banana.png::CompressedTexture2D::1500454768032121552::1789582300::1789582300::1::::<><><>0<>0<>7126baf3c5b74e44d3af65882bc03311<>res://.godot/imported/banana.png-5a07cf8e51ac5c2d36316a1ddb29f887.ctex::
 banana_animations.tres::SpriteFrames::5668554878325423266::1789582300::0::1::::<><><>0<>0<><>::uid://kpvdxyigd3jo::::res://sprites/banana/banana fall 1.png<>uid://bqfs4jokx1fi0::::res://sprites/banana/banana fall 2.png<>uid://tusy67yx8fxr::::res://sprites/banana/banana fall 3.png<>uid://dklthporwyayo::::res://sprites/banana/banana main 1.png<>uid://djbmnho6uj1un::::res://sprites/banana/banana main 2.png<>uid://lkr3adxkjkmr::::res://sprites/banana/banana main 3.png<>uid://pso8pd4dahi1::::res://sprites/banana/banana splat 1.png<>uid://ce5nsgq6jgeof::::res://sprites/banana/banana splat 2.png<>uid://n1ypch6vwjyw::::res://sprites/banana/banana splat 3.png
-::res://sprites/pepper/::1789582315
+::res://sprites/fries/::1790299570
+::res://sprites/fries/falling/::1790299570
+fries falling 1.png::CompressedTexture2D::2798066432218070580::1789182765::1790299893::1::::<><><>0<>0<>df33923b1fc61087e747046902125df1<>res://.godot/imported/fries falling 1.png-c6b26eee3c05d1e2a378ad45218ce604.ctex::
+fries falling 2.png::CompressedTexture2D::6202649430771789795::1789182765::1790299893::1::::<><><>0<>0<>c5626cb15e83d9f70126be1eb2fa34e0<>res://.godot/imported/fries falling 2.png-04738374b30f5e4a7a88389314af855c.ctex::
+fries falling 3.png::CompressedTexture2D::4882426421893318657::1790299523::1790299893::1::::<><><>0<>0<>ce8c9e3cbfedf8b53009ad6103e5c898<>res://.godot/imported/fries falling 3.png-df272910b2590c7bd8332c45b413d7ad.ctex::
+fries falling 4.png::CompressedTexture2D::3266357583086173598::1790299523::1790299893::1::::<><><>0<>0<>5bcfecbc038be6435972e835da9c1370<>res://.godot/imported/fries falling 4.png-1947374f65a3ba6b1b9d5efc36134ba9.ctex::
+::res://sprites/fries/idle/::1790299244
+fries 1.png::CompressedTexture2D::2375214074793215441::1789615090::1790299893::1::::<><><>0<>0<>ba19fc4a521c1577f145ebceb6ab31a1<>res://.godot/imported/fries 1.png-608cd604c9fe6a28477f738aee2dc114.ctex::
+fries 2.png::CompressedTexture2D::1727057514586348494::1789615090::1790299893::1::::<><><>0<>0<>81556c1c448d2f37341a7bf700d5a0a6<>res://.godot/imported/fries 2.png-b69f4d24e4960e6708df85559180f99b.ctex::
+fries 3.png::CompressedTexture2D::1966315733740119238::1789615089::1790299893::1::::<><><>0<>0<>a147fd4db65520397f40627dff993cca<>res://.godot/imported/fries 3.png-eea2b5284e807228583097e42d0e0a37.ctex::
+fries 4.png::CompressedTexture2D::4008135906009393855::1789615090::1790299893::1::::<><><>0<>0<>bfdbbdecce6197beb899bb1c7c3fea8d<>res://.godot/imported/fries 4.png-b129dc027d31ce9d6e94ced6964da0fc.ctex::
+fries 5.png::CompressedTexture2D::6358477490008933777::1789615090::1790299893::1::::<><><>0<>0<>8ec708df046a4c4eb545f638e4e376dd<>res://.godot/imported/fries 5.png-a3b0ec4eb3c0b593bfbd34b7858458d6.ctex::
+fries 6.png::CompressedTexture2D::6158516675899633377::1789615090::1790299893::1::::<><><>0<>0<>ef89b76e8a64844532dc7857ee617e8e<>res://.godot/imported/fries 6.png-a29432eeb0d4a7b96115d29cc346c20c.ctex::
+::res://sprites/garlic/::1790299743
+garlic 1.png::CompressedTexture2D::5950390891577850329::1789000761::1790299893::1::::<><><>0<>0<>8e7b97372a2b0c74a698323a3647a8d3<>res://.godot/imported/garlic 1.png-e2b51ced8c26f6371631051ef39dff78.ctex::
+garlic 2.png::CompressedTexture2D::3317939394000103356::1790299699::1790299893::1::::<><><>0<>0<>a5372c9d28543bc9a4c25f8183c664e7<>res://.godot/imported/garlic 2.png-faef7266338efc9f9e7e325743eefb36.ctex::
+garlic 3.png::CompressedTexture2D::1414684315519162941::1789000762::1790299893::1::::<><><>0<>0<>c1bc0a2bbf0a58dce774e55a1a7d1d50<>res://.godot/imported/garlic 3.png-78529170df21dada8b2a3fde2fc541fc.ctex::
+garlic 4.png::CompressedTexture2D::8201204222368607316::1789000761::1790299893::1::::<><><>0<>0<>0c880834793c80e346c2cbf2b9dda4c0<>res://.godot/imported/garlic 4.png-550c71310ba2782b7f8070d19a15d786.ctex::
+::res://sprites/gravy/::1790299439
+intro_animation-1.png::CompressedTexture2D::7812106090382385786::1789614495::1790299895::1::::<><><>0<>0<>baac2f10b8dfa7d21c228a12bba792de<>res://.godot/imported/intro_animation-1.png-3250c792ee401d492e26f01d727ed368.ctex::
+intro_animation-2.png::CompressedTexture2D::2231695611685000361::1790299281::1790299895::1::::<><><>0<>0<>451d234abc82053ad2b6ed57627313b1<>res://.godot/imported/intro_animation-2.png-ba7b3c850df3e9e9cdbb691c995f1d4b.ctex::
+intro_animation-3.png::CompressedTexture2D::889080840121962288::1789614497::1790299895::1::::<><><>0<>0<>084778368f44c57b1fbf219bbe79fa62<>res://.godot/imported/intro_animation-3.png-a8f09bef571632256ddf8526cca534d3.ctex::
+intro_animation-4.png::CompressedTexture2D::1574861745955488563::1789614495::1790299895::1::::<><><>0<>0<>3e0ea3dd5c09a5e9dfe2a56b3327f634<>res://.godot/imported/intro_animation-4.png-e5e757bd0c1bf987e49db9a7c8e879b4.ctex::
+intro_animation-5.png::CompressedTexture2D::787020469822144801::1789614495::1790299895::1::::<><><>0<>0<>461780f9e4c1fcafe5f463a361fd6972<>res://.godot/imported/intro_animation-5.png-e2087e66e2d965ed76ed93833994087f.ctex::
+intro_animation-6.png::CompressedTexture2D::7176773187600671580::1789614494::1790299894::1::::<><><>0<>0<>bcd612f8a69e96952eb9ded88c7f31ea<>res://.godot/imported/intro_animation-6.png-a9fa39e0c534454ba9abcd8a2177eaf6.ctex::
+intro_animation-7.png::CompressedTexture2D::7961657896312290128::1789614496::1790299894::1::::<><><>0<>0<>f8eaf4797e215968cc58fb517112186b<>res://.godot/imported/intro_animation-7.png-9f0e25040caa743ceb819722f59e3355.ctex::
+intro_animation-8.png::CompressedTexture2D::6698544938428516992::1789614498::1790299894::1::::<><><>0<>0<>576bdfd8eb7bb772be3f8c2007ea66f3<>res://.godot/imported/intro_animation-8.png-89a257ff8ceb7165d7b8a6665325b40d.ctex::
+intro_animation-9.png::CompressedTexture2D::3446648292736515641::1789614495::1790299894::1::::<><><>0<>0<>5deef0636321672aff8f23f2a9cea56c<>res://.godot/imported/intro_animation-9.png-503c6643f438f8d30c1c090ed4a71d4a.ctex::
+intro_animation-10.png::CompressedTexture2D::6130941440899084496::1790299277::1790299894::1::::<><><>0<>0<>e569fc44a7cfd692ba57b10c7d6a86b9<>res://.godot/imported/intro_animation-10.png-58deeb60834515aae83c4ed14a5f205e.ctex::
+intro_animation-11.png::CompressedTexture2D::7533922183376465339::1789614496::1790299894::1::::<><><>0<>0<>e66ddc1822126c1189ec6d4966814033<>res://.godot/imported/intro_animation-11.png-340ae011f9d5449b5dc3b9d260d6c83c.ctex::
+intro_animation-12.png::CompressedTexture2D::6498759282748162559::1789614496::1790299894::1::::<><><>0<>0<>1221f846290bbeafabfae1b5f9dc1e30<>res://.godot/imported/intro_animation-12.png-b824c3b736916e59d03ffda0a62d4b47.ctex::
+intro_animation-13.png::CompressedTexture2D::836438046483965442::1789614497::1790299894::1::::<><><>0<>0<>8b9a318bfe414341bebf0d9395e44ef3<>res://.godot/imported/intro_animation-13.png-c4fb284dfa8a644832186b095d9ed666.ctex::
+intro_animation-14.png::CompressedTexture2D::2793857638977911876::1789614498::1790299894::1::::<><><>0<>0<>c6149318800f8d2b2ef49907f87fecb7<>res://.godot/imported/intro_animation-14.png-3571615b09d6d54a9d4385cf494b9c3b.ctex::
+intro_animation-15.png::CompressedTexture2D::7220819448658040474::1789614494::1790299894::1::::<><><>0<>0<>55dd50bb5f332d3319706c1034352003<>res://.godot/imported/intro_animation-15.png-560f0a405cc2c830ff1a1a85c6a24e3a.ctex::
+intro_animation-16.png::CompressedTexture2D::5405729393965713250::1789614494::1790299894::1::::<><><>0<>0<>69aab31ec4cf8104e78bb974f758b2e7<>res://.godot/imported/intro_animation-16.png-3037f464e3ffe53aca4f06a9e61e5a43.ctex::
+intro_animation-17.png::CompressedTexture2D::4969509136537579527::1790299273::1790299894::1::::<><><>0<>0<>4947f48753fb6d05a9ecb0ccd908d6d4<>res://.godot/imported/intro_animation-17.png-921948f095eae7f034bad91234cb9cc5.ctex::
+intro_animation-18.png::CompressedTexture2D::1235732633460507177::1789614498::1790299898::1::::<><><>0<>0<>c6f202e6062bab9fcdec39271fd8eca6<>res://.godot/imported/intro_animation-18.png-b2672fbd51fcae2826d21cd2ce871968.ctex::
+intro_animation-19.png::CompressedTexture2D::5925295180340537200::1789614496::1790299897::1::::<><><>0<>0<>73e36f5cd708344737d507601358bb88<>res://.godot/imported/intro_animation-19.png-55fef0173a03460101f1fba931fc482c.ctex::
+intro_animation-20.png::CompressedTexture2D::3686737733898222401::1789614497::1790299897::1::::<><><>0<>0<>5d0ba133daa288c9b4751c6cb088593a<>res://.godot/imported/intro_animation-20.png-bc8d5014f5a147c2b983c7d3cb5aed34.ctex::
+intro_animation-21.png::CompressedTexture2D::3560330245105144701::1790299270::1790299897::1::::<><><>0<>0<>8393a0ade38cb34f3488b5df8178792b<>res://.godot/imported/intro_animation-21.png-b0fbc444057f98f1cc8cef0ae8812d66.ctex::
+intro_animation-22.png::CompressedTexture2D::9109791141675472851::1790299270::1790299897::1::::<><><>0<>0<>ce811fcfb0e2863013d1a73ed53ea6d8<>res://.godot/imported/intro_animation-22.png-f7770a5135bb1c4e43c68e1a89bfca8f.ctex::
+intro_animation-23.png::CompressedTexture2D::1827745419797881284::1789614495::1790299897::1::::<><><>0<>0<>0989bec4853965fc9ca5be22e0eaa007<>res://.godot/imported/intro_animation-23.png-391272422920bec4088df94451c99d18.ctex::
+intro_animation-24.png::CompressedTexture2D::5983426133926371319::1789614498::1790299897::1::::<><><>0<>0<>6d91526d24faa94a80f9594305b73a06<>res://.godot/imported/intro_animation-24.png-1b588888b76a1d7e6b4bdcf16643a259.ctex::
+intro_animation-25.png::CompressedTexture2D::4063084569778915588::1789614496::1790299896::1::::<><><>0<>0<>9f782ee05bf3a666bd071ccc78f623ce<>res://.godot/imported/intro_animation-25.png-2787373a3778aea46675b8e6f68f89a9.ctex::
+intro_animation-26.png::CompressedTexture2D::255664486098233548::1790299263::1790299896::1::::<><><>0<>0<>b027e9e33edb6e16455eae647a656f5b<>res://.godot/imported/intro_animation-26.png-a25b736e5ad4c4a724070cfda9efb020.ctex::
+intro_animation-27.png::CompressedTexture2D::8120465863190457263::1789614493::1790299896::1::::<><><>0<>0<>6647b3b24669c637bc3d8fdd8584b38e<>res://.godot/imported/intro_animation-27.png-0fda812ca01fbe580df8a83aeaddb55d.ctex::
+::res://sprites/gravy/idle/::1790299391
+::res://sprites/heart/::1790298007
+sushi-1.png::CompressedTexture2D::6885267722541961820::1790103745::1790299898::1::::<><><>0<>0<>b9293ccac973aaf61b71b5befa6efcae<>res://.godot/imported/sushi-1.png-a2fe85fc27221d0e4dc395cfa770b6e2.ctex::
+sushi-2.png::CompressedTexture2D::2564887451879581313::1790103747::1790299898::1::::<><><>0<>0<>7ca4765548f43f62f39f0562c14d8c9c<>res://.godot/imported/sushi-2.png-e97e8e130728551fff591c94c70c2cb1.ctex::
+sushi-3.png::CompressedTexture2D::1760675959830776714::1790103746::1790299898::1::::<><><>0<>0<>6f9b10bfb15c1c4913ef4677f289b7ca<>res://.godot/imported/sushi-3.png-f084a9f3ee413e4c8780bed8b08c953e.ctex::
+::res://sprites/pepper/::1790299611
 green 1.png::CompressedTexture2D::230172985061862621::1789582300::1789582300::1::::<><><>0<>0<>690be9865b5410129fce5560eab3312d<>res://.godot/imported/green 1.png-528d23bffb42111cc5e266ffd198e145.ctex::
 green 2.png::CompressedTexture2D::3667204831910939787::1789582300::1789582300::1::::<><><>0<>0<>23865a4561ef1e9c411118963649fbd2<>res://.godot/imported/green 2.png-b0b75bfe5b764358fb070738621a152b.ctex::
 green 3.png::CompressedTexture2D::3965279387884126933::1789582300::1789582300::1::::<><><>0<>0<>83fa4d0b19f40172dce506437c522329<>res://.godot/imported/green 3.png-7da84fb9932ec0d1f9195075121ee69f.ctex::
@@ -37,7 +89,22 @@ green 4.png::CompressedTexture2D::1137964161739218395::1789582300::1789582300::1
 green 5.png::CompressedTexture2D::6148995135039311561::1789582300::1789582300::1::::<><><>0<>0<>60ed011150044554f4d1cac90e109c48<>res://.godot/imported/green 5.png-53aa761e028843e4f2d2396e80f3a249.ctex::
 green.png::CompressedTexture2D::9119434065286186626::1789582300::1789582300::1::::<><><>0<>0<>21bb7638ce9511ea014ab361cc7720d2<>res://.godot/imported/green.png-3b2ea90e09e66c52d6dea8af0db64b98.ctex::
 pepper_animations.tres::SpriteFrames::7483498359707481059::1789582300::0::1::::<><><>0<>0<><>::uid://djq6eijd4htd::::res://sprites/pepper/green 1.png<>uid://bsiole6x6iafr::::res://sprites/pepper/green 2.png<>uid://bwq2tppd6kv6d::::res://sprites/pepper/green 3.png<>uid://qhidrvm87hhb::::res://sprites/pepper/green 4.png<>uid://ctuvb0r7f653r::::res://sprites/pepper/green 5.png
-::res://sprites/peppermint/::1789582315
+::res://sprites/pepper/flame/::1790299679
+burning 1.png::CompressedTexture2D::6744264518244785157::1789180141::1790299893::1::::<><><>0<>0<>274818bee2ff4acfa2afee45bdf452a0<>res://.godot/imported/burning 1.png-ccb7dad61491ab46c9eb290e7362a03f.ctex::
+burning 2.png::CompressedTexture2D::7495789419179540671::1789180141::1790299893::1::::<><><>0<>0<>099c143cacb11e4d275b718bd080cb00<>res://.godot/imported/burning 2.png-cf1eaff1a4ee4ef8d4a7025e8247a386.ctex::
+burning 3.png::CompressedTexture2D::1649921330900273285::1789180141::1790299893::1::::<><><>0<>0<>2ecda1c952e1c02e84c552b8641e0b7d<>res://.godot/imported/burning 3.png-bda36772141e0625898af7103659860a.ctex::
+fire breath 2 1.png::CompressedTexture2D::4725921388044242209::1789180141::1790299893::1::::<><><>0<>0<>b6711d2480db34a798940f11b227c6e2<>res://.godot/imported/fire breath 2 1.png-12bbfd0fc5a717b6d46d070289914bd1.ctex::
+fire breath 2 2.png::CompressedTexture2D::491922944345900301::1789180141::1790299893::1::::<><><>0<>0<>86c08c33a54146eef5bda5c204a84f0e<>res://.godot/imported/fire breath 2 2.png-d5b7339362a77760badd150ae8db9e0f.ctex::
+fire breath 2 3.png::CompressedTexture2D::7712714246555823976::1789180141::1790299893::1::::<><><>0<>0<>4f7a4fcfb1f28b115b45eecb7cbb00b9<>res://.godot/imported/fire breath 2 3.png-207da7706a46e4a7497e2764935da1a6.ctex::
+fire breath 2 4.png::CompressedTexture2D::8235750321383917807::1789180141::1790299893::1::::<><><>0<>0<>9753f8281ca9d69141b8840c2ab3489e<>res://.godot/imported/fire breath 2 4.png-bbfd44b2cd15b6c6726cd5105b026667.ctex::
+fire breath 2 5.png::CompressedTexture2D::508569337129738582::1789180141::1790299893::1::::<><><>0<>0<>ccadeacc89434b074f8e420efb3168b1<>res://.godot/imported/fire breath 2 5.png-2889bef02136cd24040abb1366dfa856.ctex::
+fire breath 2 6.png::CompressedTexture2D::9090063419285989833::1789180141::1790299893::1::::<><><>0<>0<>ab4f3ad72ba062678c362d81493b95af<>res://.godot/imported/fire breath 2 6.png-8442c5d3f54ab205a3d318432500be8a.ctex::
+::res://sprites/pepper/skill/::1790299518
+fire breath 1.png::CompressedTexture2D::4781436023953535956::1790299507::1790299893::1::::<><><>0<>0<>db9b99135d7d712a284052791270e41e<>res://.godot/imported/fire breath 1.png-89d52e462a6ad7ba13f27777fa3ac696.ctex::
+fire breath 2.png::CompressedTexture2D::5639650596520204493::1789579623::1790299893::1::::<><><>0<>0<>6f03086c9814717a8039f9a39bfd200b<>res://.godot/imported/fire breath 2.png-cc8cead39f065df339059b708dc31edb.ctex::
+fire breath 3.png::CompressedTexture2D::9213960203211342326::1790299491::1790299893::1::::<><><>0<>0<>3b8bfe8ff651289052658802a164da43<>res://.godot/imported/fire breath 3.png-e3034fa1b4a91c3178ff91429ff169f7.ctex::
+fire breath 4.png::CompressedTexture2D::8739185761712710121::1789579623::1790299893::1::::<><><>0<>0<>768a73f29832440c764dafbd0db539e8<>res://.godot/imported/fire breath 4.png-e67f0d2cffb3dad34287834450ca7674.ctex::
+::res://sprites/peppermint/::1790299785
 Peppermint rotate  1.png::CompressedTexture2D::1771993697206236371::1789582300::1789582300::1::::<><><>0<>0<>80f644747f39d9fc6e2fc418f95748d8<>res://.godot/imported/Peppermint rotate  1.png-e0b520e73bd182387a043f5ed3cf1c5a.ctex::
 Peppermint rotate  2.png::CompressedTexture2D::4284891260189715706::1789582300::1789582300::1::::<><><>0<>0<>a851b313445a75910f96f3063941bb14<>res://.godot/imported/Peppermint rotate  2.png-58bbee1363193319e2ab8d771308fd69.ctex::
 Peppermint rotate  3.png::CompressedTexture2D::6832996841474590117::1789582300::1789582300::1::::<><><>0<>0<>70a4305974185c1aae0bb7bfd0594d4f<>res://.godot/imported/Peppermint rotate  3.png-f4e5c82458177e204d6758e42408d72e.ctex::
@@ -45,3 +112,35 @@ Peppermint rotate  4.png::CompressedTexture2D::1155669264766976353::1789582300::
 Peppermint rotate  5.png::CompressedTexture2D::193763856142928816::1789582300::1789582300::1::::<><><>0<>0<>d3ec1375f18fc7667cc6fcaca86d8e0e<>res://.godot/imported/Peppermint rotate  5.png-4e23552c70edf59836e66c0ab865b25a.ctex::
 Peppermint rotate  6.png::CompressedTexture2D::6568834575301736990::1789582300::1789582300::1::::<><><>0<>0<>c6230c47dd169105853623043ddfc7e1<>res://.godot/imported/Peppermint rotate  6.png-2b562c5dd5366c1b4890ed7b78948af6.ctex::
 peppermint_animations.tres::SpriteFrames::5660082854550540933::1789582300::0::1::::<><><>0<>0<><>::uid://0imqh04es164::::res://sprites/peppermint/Peppermint rotate  1.png<>uid://b2bvsegaljn7o::::res://sprites/peppermint/Peppermint rotate  2.png<>uid://c4l7pvmx5o05v::::res://sprites/peppermint/Peppermint rotate  3.png<>uid://qp2x604qcb8l::::res://sprites/peppermint/Peppermint rotate  4.png<>uid://c04i6lop17dk::::res://sprites/peppermint/Peppermint rotate  5.png<>uid://c0t80mcorbi6i::::res://sprites/peppermint/Peppermint rotate  6.png
+::res://sprites/peppermint/splat/::1790299785
+peppermint 1.png::CompressedTexture2D::4439950107981638288::1788922112::1790299893::1::::<><><>0<>0<>b49dec709631c433f505e9078e6438d5<>res://.godot/imported/peppermint 1.png-eef97d0366f39b2262b7bdcd01ed76b2.ctex::
+peppermint 2.png::CompressedTexture2D::7044076640726878309::1788922112::1790299893::1::::<><><>0<>0<>34ca39da3de3e0ba4a03c2e5af3d0c7b<>res://.godot/imported/peppermint 2.png-67941b6cd351728f9ce5543b29d412fc.ctex::
+peppermint 3.png::CompressedTexture2D::5052325436501808159::1788922112::1790299893::1::::<><><>0<>0<>dbffd03c228a2785afb6de559e10d6ef<>res://.godot/imported/peppermint 3.png-34eae84fcb1eb96642111b797d07a271.ctex::
+peppermint 4.png::CompressedTexture2D::7440955275529138245::1788922111::1790299893::1::::<><><>0<>0<>2ad23fc1cd7ddd3e22d6d287ca6ad662<>res://.godot/imported/peppermint 4.png-ba90c610c05dbe551e79af1a0d05ffb5.ctex::
+peppermint 5.png::CompressedTexture2D::5282936223092433208::1788922112::1790299893::1::::<><><>0<>0<>82d7c94386af0d5f387629cd0f9c3340<>res://.godot/imported/peppermint 5.png-5e5233ea143dad8b469ebce4bbbe759d.ctex::
+::res://sprites/songs/::1790299811
+::res://sprites/songs/title screen/::1790299811
+goblins theme.mp3::AudioStreamMP3::927843781719446439::1790299803::1790299893::1::::<><><>0<>0<>9dfa27703a445105e54e38581fd49738<>res://.godot/imported/goblins theme.mp3-3bfb13b14a30a66a2069cef4ca3fff3d.mp3str::
+::res://sprites/spice/::1790299104
+::res://sprites/spice/level 0 10fps/::1790299109
+Untitled 2 2 2 1.png::CompressedTexture2D::1260162474425180523::1790105747::1790299896::1::::<><><>0<>0<>0637eb1d995f481cec052799e4702deb<>res://.godot/imported/Untitled 2 2 2 1.png-8372ede0e76a860ae7545920d610132e.ctex::
+Untitled 2 2 2 2.png::CompressedTexture2D::5977720508748819992::1790105747::1790299896::1::::<><><>0<>0<>3104562e4ac6213541f61140b0101856<>res://.godot/imported/Untitled 2 2 2 2.png-f8fa9eefc4d8e05b04318aaf505477f2.ctex::
+Untitled 2 2 2 3.png::CompressedTexture2D::9151625936936827261::1790105747::1790299895::1::::<><><>0<>0<>f1ef39b20ada8c8e2759f6b912372c40<>res://.godot/imported/Untitled 2 2 2 3.png-b0cea254dedc29b486fe10c7688bce55.ctex::
+::res://sprites/spice/level 1 10fps/::1790299063
+Untitled 2 2 1.png::CompressedTexture2D::1372941882014746320::1790105196::1790299895::1::::<><><>0<>0<>99cb45d59dea8a164c2c4dc8ff412bea<>res://.godot/imported/Untitled 2 2 1.png-32063402b278a726820ad7c49813bd40.ctex::
+Untitled 2 2 2.png::CompressedTexture2D::2242867362679224472::1790105196::1790299895::1::::<><><>0<>0<>46c71137c1b8ed4fffd992f7a9d86744<>res://.godot/imported/Untitled 2 2 2.png-799091cd719c2fe3ef287af54161244c.ctex::
+Untitled 2 2 3.png::CompressedTexture2D::983390561899665471::1790105196::1790299895::1::::<><><>0<>0<>1081a4a12ad59665bec936da1a821fbc<>res://.godot/imported/Untitled 2 2 3.png-7ef5199fe604ad4b43dc41cad50689a4.ctex::
+::res://sprites/spice/level 2 10fps/::1790297975
+Untitled 2 2 1.png::CompressedTexture2D::5279259495706121066::1790105669::1790299895::1::::<><><>0<>0<>b618c025216cd128f30d0a19b0e1dbd9<>res://.godot/imported/Untitled 2 2 1.png-67fe08560ef3093a4bdee2b1705ce4e6.ctex::
+Untitled 2 2 2.png::CompressedTexture2D::4720458011543175883::1790105669::1790299895::1::::<><><>0<>0<>697fa1c2e5a0011d980a512b197c20cf<>res://.godot/imported/Untitled 2 2 2.png-168f1260a0b23adc7624311d0736a51f.ctex::
+Untitled 2 2 3.png::CompressedTexture2D::256283010466817723::1790105669::1790299895::1::::<><><>0<>0<>7bf17fa35e5a3e62ecdd1b933a007c37<>res://.godot/imported/Untitled 2 2 3.png-d32e3bed34f9a29f9d7a3e53fbfac5d8.ctex::
+::res://sprites/title screen/::1790299842
+intro_animation-1.png::CompressedTexture2D::5135805084934943351::1788820467::1790299893::1::::<><><>0<>0<>560ada7d900c81b809cf2996ac39624d<>res://.godot/imported/intro_animation-1.png-8f8c3c9c3622874f91c4d771732d0aad.ctex::
+intro_animation-2.png::CompressedTexture2D::3216308219199080404::1788820467::1790299894::1::::<><><>0<>0<>38c07897e9be4c81d1b5fb075520ac36<>res://.godot/imported/intro_animation-2.png-59103b43f8f1955ba05d256d53903130.ctex::
+intro_animation-3.png::CompressedTexture2D::7685910519236553732::1788820467::1790299894::1::::<><><>0<>0<>498348a2fd6c232e6e3645cfcb92e6d0<>res://.godot/imported/intro_animation-3.png-a5b89181f90de8d9ab7643e88c40f8d3.ctex::
+::res://sprites/toilet/::1790299199
+sushi-1.png::CompressedTexture2D::3643320936451046813::1789616382::1790299893::1::::<><><>0<>0<>5257964b34b47b8da397d682e31a6ed8<>res://.godot/imported/sushi-1.png-98e656786f754f22a5e08884ff04eb46.ctex::
+sushi-2.png::CompressedTexture2D::293503398392737298::1790298030::1790299893::1::::<><><>0<>0<>e6eeac6b880f4ecfa86085911abc4258<>res://.godot/imported/sushi-2.png-d635af31a1cbffd566b7acf0e8521847.ctex::
+sushi-3.png::CompressedTexture2D::1595679066344635629::1790298031::1790299893::1::::<><><>0<>0<>c62dea485622ef195bdffb650579a482<>res://.godot/imported/sushi-3.png-9b6eb96dd73e9ee521d6df76245ea8ac.ctex::
+::res://sprites/toilet/fire/::1790299199
+sushi-2.png::CompressedTexture2D::765100111958660017::1790298065::1790299895::1::::<><><>0<>0<>d57601a80bc91aeaadefe7db202a4968<>res://.godot/imported/sushi-2.png-0270a08a7f812da543d4fd70a5a62755.ctex::
