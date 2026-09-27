@@ -1,6 +1,5 @@
 extends CharacterBody2D
 
-#@export var is_initial_spawn: bool = false
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @export var level: int = 0
 var has_triggered := false # prevents spawning every physics frame while still touching
