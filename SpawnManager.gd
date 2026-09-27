@@ -3,6 +3,8 @@ extends Node
 @export var character_scene: PackedScene = preload("res://entities/player.tscn")
 
 signal scores_updated(scores: Dictionary)
+signal can_eat(answer: bool)
+signal space_bar_pressed(bool)
 
 const MAX_LEVEL := 6
 const SPAWN_POSITION := Vector2(1042, 80)
@@ -21,7 +23,6 @@ var scores := {
 
 func _ready() -> void:
 	_load_all_foods()
-	spawn_new()
 	
 func _load_all_foods() -> void:
 	var dir := DirAccess.open(FOOD_FOLDER)
@@ -38,9 +39,14 @@ func _load_all_foods() -> void:
 		file_name = dir.get_next()
 	dir.list_dir_end()
 	
+func _process(_delta: float) -> void:
+	if Input.is_action_just_pressed("eat"):
+		space_bar_pressed.emit(true)
+	
 func spawn_new() -> CharacterBody2D:
 	if game_over:
 		return null
+		
 	var new_body = character_scene.instantiate()
 	new_body.global_position = SPAWN_POSITION
 
@@ -50,7 +56,7 @@ func spawn_new() -> CharacterBody2D:
 	get_tree().current_scene.add_child(new_body)
 	return new_body
 	
-func apply_bonus_for_body(body: Node) -> void:
+func score_points(body: Node) -> void:
 	var food: FoodData = body.food_data
 	if food == null:
 		return
@@ -58,8 +64,10 @@ func apply_bonus_for_body(body: Node) -> void:
 	scores["bully"]       -= food.peace
 	scores_updated.emit(scores)
 	
+	
 func check_stop_conditions() -> bool:
 	for score_key in scores.keys():
 		if scores[score_key] >= SCORE_LIMITS[score_key]:
 			return true
+	can_eat.emit(true)
 	return false

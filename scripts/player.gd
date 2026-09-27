@@ -67,10 +67,6 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	if is_on_floor():
-		_on_touch(self)
-		return
-
 	for i in get_slide_collision_count():
 		var collider = get_slide_collision(i).get_collider()
 		if collider is CharacterBody2D and collider != self:
@@ -83,13 +79,14 @@ func _on_touch(touched_body: Node) -> void:
 	has_triggered = true
 
 	if touched_body != null:
-		SpawnManager.apply_bonus_for_body(self)
+		SpawnManager.score_points(self)
 
 	animated_sprite_2d.play("splat")
 
 	if SpawnManager.check_stop_conditions():
 		SpawnManager.game_over = true
+		SpawnManager.can_eat.emit(false)
 		print("game over")
 		return
 
-	SpawnManager.spawn_new()
+	SpawnManager.can_eat.emit(true)
