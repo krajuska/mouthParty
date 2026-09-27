@@ -1,8 +1,2 @@
 res://entities/player.tscn
-res://sprites/_template_animations.tres
-res://SpawnManager.gd
-res://scripts/player.gd
 res://scenes/game.gd
-res://food_data/peppermint.tres
-res://food_data/pepper.tres
-res://food_data/banana.tres
