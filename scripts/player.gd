@@ -8,14 +8,13 @@ const SPEED = 300.0
 const DOWN_VELOCITY = Vector2(0, 0.5)
 
 var food_data: FoodData = null
+var hard_dropping := false
 
 func _ready() -> void:
 	animated_sprite_2d.animation_finished.connect(_on_animation_finished)
 	_update_visual_from_food()
 	
 func _on_animation_finished() -> void:
-	print("finished animation: ", animated_sprite_2d.animation)
-
 	if animated_sprite_2d.animation != "idle":
 		animated_sprite_2d.play("idle")
 		
@@ -32,12 +31,19 @@ func _input(event):
 		if Input.is_action_just_pressed("ui_right"):
 			position.x += 162
 
+func hard_drop() -> void:
+	if has_triggered:
+		return
+	hard_dropping = true
+	
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity += DOWN_VELOCITY
 
 		var sides := Input.get_axis("ui_left", "ui_right")
 		var down := Input.get_axis("ui_down", "")
+		if hard_dropping:
+			down = -1.0   # act as if down is held
 		if down:
 			velocity.y = down * SPEED * -6
 		else:
@@ -86,7 +92,6 @@ func _on_touch(touched_body: Node) -> void:
 	if SpawnManager.check_stop_conditions():
 		SpawnManager.game_over = true
 		SpawnManager.can_eat.emit(false)
-		print("game over")
 		return
 
 	SpawnManager.can_eat.emit(true)

@@ -3,7 +3,7 @@ extends Node
 @export var character_scene: PackedScene = preload("res://entities/player.tscn")
 
 signal scores_updated(scores: Dictionary)
-signal can_eat(answer: bool)
+signal can_eat(bool)
 signal space_bar_pressed(bool)
 
 const MAX_LEVEL := 6
@@ -15,6 +15,7 @@ const SCORE_LIMITS := {
 }
 
 var food_list: Array[FoodData] = []
+var current_food: CharacterBody2D = null
 var game_over := false
 var scores := {
 	"bully": 0,
@@ -42,11 +43,12 @@ func _load_all_foods() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("eat"):
 		space_bar_pressed.emit(true)
-	
+
 func spawn_new() -> CharacterBody2D:
+	can_eat.emit(false)
 	if game_over:
 		return null
-		
+
 	var new_body = character_scene.instantiate()
 	new_body.global_position = SPAWN_POSITION
 
@@ -54,8 +56,15 @@ func spawn_new() -> CharacterBody2D:
 	new_body.food_data = chosen_food
 
 	get_tree().current_scene.add_child(new_body)
+	current_food = new_body
 	return new_body
-	
+
+func drop_current() -> void:
+	if game_over:
+		return
+	if is_instance_valid(current_food):
+		current_food.hard_drop()
+			
 func score_points(body: Node) -> void:
 	var food: FoodData = body.food_data
 	if food == null:

@@ -10,6 +10,8 @@ var previous_scores := {
 func _ready() -> void:
 	SpawnManager.scores_updated.connect(_on_scores_updated)
 	SpawnManager.space_bar_pressed.connect(_on_spacebar_pressed)
+	SpawnManager.can_eat.connect(_on_can_eat_changed)
+
 
 func _on_scores_updated(new_scores: Dictionary) -> void:
 	var lines: Array[String] = []
@@ -27,10 +29,13 @@ func _on_scores_updated(new_scores: Dictionary) -> void:
 		score_label.text = "\n".join(lines)
 	previous_scores = new_scores.duplicate()
 
-func _on_spacebar_pressed(can_drop_next: bool) -> void:
-	can_eat = can_drop_next
+func _on_spacebar_pressed(_pressed: bool) -> void:
 	if can_eat:
-		can_eat = false
 		SpawnManager.spawn_new()
 	else:
-		return
+		SpawnManager.drop_current()
+
+
+func _on_can_eat_changed(value: bool) -> void:
+	can_eat = value
+	
