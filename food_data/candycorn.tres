@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://t6pmeldhm0eg"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_m50se"]
+[ext_resource type="SpriteFrames" uid="uid://l6k1a6v0xisy" path="res://sprites/candycorn/candycorn_animations.tres" id="2_m50se"]
+
+[resource]
+script = ExtResource("1_m50se")
+food_name = "candycorn"
+sprite_frames = ExtResource("2_m50se")
+dancing_bonus = true
+metadata/_custom_type_script = "uid://beujfqord0qj0"

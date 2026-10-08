@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bvmfmk3oepe52"]
+
+[ext_resource type="Texture2D" uid="uid://5h6lexyws7c5" path="res://sprites/lemon/lemon.png" id="1_qceoa"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qceoa")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qceoa")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qceoa")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

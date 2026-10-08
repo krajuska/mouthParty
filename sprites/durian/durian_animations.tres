@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://inn2bmrwt2uh"]
+
+[ext_resource type="Texture2D" uid="uid://bjpeonhe16w8b" path="res://sprites/durian/orange.png" id="1_cqcou"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cqcou")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cqcou")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cqcou")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

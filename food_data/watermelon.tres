@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cj725lkycw4jq"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_uo6ui"]
+[ext_resource type="SpriteFrames" uid="uid://b7gw1w3462buq" path="res://sprites/watermelon/watermelon_animations.tres" id="2_uo6ui"]
+
+[resource]
+script = ExtResource("1_uo6ui")
+food_name = "watermelon"
+sprite_frames = ExtResource("2_uo6ui")
+trouble = 1
+metadata/_custom_type_script = "uid://beujfqord0qj0"

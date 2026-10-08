@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bn25rgxpoatt2"]
+
+[ext_resource type="Texture2D" uid="uid://3a03oskq4ylm" path="res://sprites/popcorn/popcorn.png" id="1_vggnu"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vggnu")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vggnu")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_vggnu")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

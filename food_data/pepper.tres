@@ -7,5 +7,5 @@
 script = ExtResource("1_gofvq")
 food_name = "pepper"
 sprite_frames = ExtResource("2_p1rcg")
-bully = 1
+kick = true
 metadata/_custom_type_script = "uid://beujfqord0qj0"

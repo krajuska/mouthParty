@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b7gw1w3462buq"]
+
+[ext_resource type="Texture2D" uid="uid://dmu55nvgvt57h" path="res://sprites/watermelon/meloncia.png" id="1_lgeap"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lgeap")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lgeap")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lgeap")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

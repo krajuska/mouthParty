@@ -1,24 +1,41 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791463932
+::res://::1791468619
+beer_animation.tres::SpriteFrames::6335444781466922133::1791468543::0::1::::<><><>0<>0<><>::uid://cck2vp1lef7nv::::res://sprites/beer/beer.png
 icon.svg::CompressedTexture2D::4371090979139180016::1784178694::1784178749::1::::<><><>0<>0<>d84d25fbb889a4afefba0a784f4e4a04<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 SpawnManager.gd::GDScript::7333617690429440627::1791312830::0::1::::<>Node<><>0<>0<><>::
 sushi.png::CompressedTexture2D::2944352038804674404::1789582300::1789582300::1::::<><><>0<>0<>7dc0819691f2dfb64b15b57c85311920<>res://.godot/imported/sushi.png-c535393b329c858b36c7219d73e1e31c.ctex::
+::res://drafts/::1791466767
+vendingmachinedisposition.jpeg::CompressedTexture2D::3164139843334481854::1791466668::1791466764::1::::<><><>0<>0<>9ca75eebad8c711b249fa473d42569c2<>res://.godot/imported/vendingmachinedisposition.jpeg-c2f058df860ad316270a52d6020cd178.ctex::
 ::res://entities/::1790466574
 player.tscn::PackedScene::1547649940131663902::1790466574::0::1::::<><><>0<>0<><>::uid://blsg7g2moi1t4::::res://scripts/player.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
-::res://food_data/::1790473559
-banana.tres::Resource/FoodData::8404931554237371413::1790473532::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
-food.gd::GDScript::2709019858009125539::1790473532::0::1::::FoodData<>Resource<><>0<>0<><>::
-pepper.tres::Resource/FoodData::6418127041517007695::1790473532::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://devceicrxcmel::::res://sprites/pepper/pepper_animations.tres
-peppermint.tres::Resource/FoodData::6181798646345467297::1790473532::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cmv10c0hvfwxh::::res://sprites/peppermint/peppermint_animations.tres
-::res://scenes/::1791312836
+::res://food_data/::1791468551
+banana.tres::Resource/FoodData::8404931554237371413::1791468483::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cm05jg5aogtju::::res://sprites/banana/banana_animations.tres
+beer.tres::Resource/FoodData::8873767833303221702::1791468548::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cwi635rw8ouu4::::res://beer_animation.tres
+broccoli.tres::Resource/FoodData::5465220337009920955::1791468483::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://kpvdxyigd3jo::::res://sprites/banana/banana fall 1.png<>uid://bqfs4jokx1fi0::::res://sprites/banana/banana fall 2.png<>uid://tusy67yx8fxr::::res://sprites/banana/banana fall 3.png<>uid://dklthporwyayo::::res://sprites/banana/banana main 1.png<>uid://djbmnho6uj1un::::res://sprites/banana/banana main 2.png<>uid://lkr3adxkjkmr::::res://sprites/banana/banana main 3.png<>uid://pso8pd4dahi1::::res://sprites/banana/banana splat 1.png<>uid://ce5nsgq6jgeof::::res://sprites/banana/banana splat 2.png<>uid://n1ypch6vwjyw::::res://sprites/banana/banana splat 3.png
+candycorn.tres::Resource/FoodData::1398516151149234530::1791467576::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cowwh2t7ghih0::::res://sprites/candycorn/candy corn.png
+chocolate.tres::Resource/FoodData::4106616551155695417::1791467576::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://dechx5pmtah5u::::res://sprites/chocolate/chocolate.png
+cola.tres::Resource/FoodData::6523071670569488487::1791467724::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://nxrfrbdmlipw::::res://sprites/cola/cola.png
+corn.tres::Resource/FoodData::6060550704318952964::1791467724::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://d3qle4rqeo7uk::::res://sprites/corn/corn.png
+durian.tres::Resource/FoodData::4571061375843094486::1791467724::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://bjpeonhe16w8b::::res://sprites/durian/orange.png
+food.gd::GDScript::2709019858009125539::1791467238::0::1::::FoodData<>Resource<><>0<>0<><>::
+fries.tres::Resource/FoodData::5181844369263221287::1791467925::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd
+garlic.tres::Resource/FoodData::72536086669712878::1791467925::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cq1oclldd07q8::::res://sprites/garlic/garlic 1.png<>uid://bnjh8hqpl7fii::::res://sprites/garlic/garlic 2.png<>uid://ufjv5plgx3xh::::res://sprites/garlic/garlic 3.png<>uid://do3yvupcldsu3::::res://sprites/garlic/garlic 4.png
+lemon.tres::Resource/FoodData::8641922077529705036::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://5h6lexyws7c5::::res://sprites/lemon/lemon.png
+pepper.tres::Resource/FoodData::6418127041517007695::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://devceicrxcmel::::res://sprites/pepper/pepper_animations.tres
+peppermint.tres::Resource/FoodData::6181798646345467297::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://cmv10c0hvfwxh::::res://sprites/peppermint/peppermint_animations.tres
+pizza.tres::Resource/FoodData::7168706738097970548::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://teicv30qf4i7::::res://sprites/pizza/pizza.png
+popcorn.tres::Resource/FoodData::4869168885612696319::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://3a03oskq4ylm::::res://sprites/popcorn/popcorn.png
+strawberry.tres::Resource/FoodData::6343150278204879960::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://ckt1oqh8w0vcw::::res://sprites/strawberry/strawberry.png
+watermelon.tres::Resource/FoodData::5472294575179164934::1791468198::0::1::::<><><>0<>0<><>::uid://beujfqord0qj0::::res://food_data/food.gd<>uid://dmu55nvgvt57h::::res://sprites/watermelon/meloncia.png
+::res://scenes/::1791468548
 game.gd::GDScript::3091635358432140605::1791312830::0::1::::<>Node2D<><>0<>0<><>::
-game.tscn::PackedScene::8962952130320921422::1791312830::0::1::::<><><>0<>0<><>::uid://bkbu1u0wp2ao0::::res://scenes/game.gd<>uid://bh7jbvm2x32yy::::res://sushi.png
+game.tscn::PackedScene::8962952130320921422::1791468548::0::1::::<><><>0<>0<><>::uid://bkbu1u0wp2ao0::::res://scenes/game.gd<>uid://bh7jbvm2x32yy::::res://sushi.png
 ::res://scripts/::1791312836
 player.gd::GDScript::3196078568060187755::1791312830::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://sprites/::1791463854
+::res://sprites/::1791468617
 _template_animations.tres::SpriteFrames::3963362898635089258::1790473532::0::1::::<><><>0<>0<><>::
 sushi-1.png::CompressedTexture2D::8733206189820909590::1790473533::1790473533::1::::<><><>0<>0<>b075ab022b745540fc7e46f00e055119<>res://.godot/imported/sushi-1.png-69c5b2847f05f1049e49fbfcb309fabe.ctex::
-::res://sprites/banana/::1789582315
+::res://sprites/banana/::1791468483
 banana fall 1.png::CompressedTexture2D::734135762405042216::1789582300::1789582300::1::::<><><>0<>0<>039b7f7db354562729222c49a6b539ce<>res://.godot/imported/banana fall 1.png-510dd103ea4afebaee4c85cb1ec08f0a.ctex::
 banana fall 2.png::CompressedTexture2D::3520909259388487485::1789582300::1789582300::1::::<><><>0<>0<>7339a18445c44500ff2334336c1fb48d<>res://.godot/imported/banana fall 2.png-58179a5d9cabd636ae003c45a9812785.ctex::
 banana fall 3.png::CompressedTexture2D::1376013027907409963::1789582300::1789582300::1::::<><><>0<>0<>f6304c471c4678c942411185432f6f71<>res://.godot/imported/banana fall 3.png-1169061d13daec2581d4d39ccef4cfdd.ctex::
@@ -29,20 +46,22 @@ banana splat 1.png::CompressedTexture2D::1090901217047463894::1789582300::178958
 banana splat 2.png::CompressedTexture2D::5116349881034114705::1789582300::1789582300::1::::<><><>0<>0<>a63b8af540623d59e67f3e706746ae27<>res://.godot/imported/banana splat 2.png-d9975769147c62a02abe8920104058d2.ctex::
 banana splat 3.png::CompressedTexture2D::967612900932712074::1789582300::1789582300::1::::<><><>0<>0<>97b2bc536862c12f831ffa0e9fc1ff6e<>res://.godot/imported/banana splat 3.png-879fb3932933fd9fd260e47cbad38ace.ctex::
 banana.png::CompressedTexture2D::1500454768032121552::1789582300::1789582300::1::::<><><>0<>0<>7126baf3c5b74e44d3af65882bc03311<>res://.godot/imported/banana.png-5a07cf8e51ac5c2d36316a1ddb29f887.ctex::
-banana_animations.tres::SpriteFrames::5668554878325423266::1789582300::0::1::::<><><>0<>0<><>::uid://kpvdxyigd3jo::::res://sprites/banana/banana fall 1.png<>uid://bqfs4jokx1fi0::::res://sprites/banana/banana fall 2.png<>uid://tusy67yx8fxr::::res://sprites/banana/banana fall 3.png<>uid://dklthporwyayo::::res://sprites/banana/banana main 1.png<>uid://djbmnho6uj1un::::res://sprites/banana/banana main 2.png<>uid://lkr3adxkjkmr::::res://sprites/banana/banana main 3.png<>uid://pso8pd4dahi1::::res://sprites/banana/banana splat 1.png<>uid://ce5nsgq6jgeof::::res://sprites/banana/banana splat 2.png<>uid://n1ypch6vwjyw::::res://sprites/banana/banana splat 3.png
-::res://sprites/beer/::1791463767
+banana_animations.tres::SpriteFrames::5668554878325423266::1791468483::0::1::::<><><>0<>0<><>::uid://kpvdxyigd3jo::::res://sprites/banana/banana fall 1.png<>uid://bqfs4jokx1fi0::::res://sprites/banana/banana fall 2.png<>uid://tusy67yx8fxr::::res://sprites/banana/banana fall 3.png<>uid://dklthporwyayo::::res://sprites/banana/banana main 1.png<>uid://djbmnho6uj1un::::res://sprites/banana/banana main 2.png<>uid://lkr3adxkjkmr::::res://sprites/banana/banana main 3.png<>uid://pso8pd4dahi1::::res://sprites/banana/banana splat 1.png<>uid://ce5nsgq6jgeof::::res://sprites/banana/banana splat 2.png<>uid://n1ypch6vwjyw::::res://sprites/banana/banana splat 3.png
+::res://sprites/beer/::1791468619
 beer.png::CompressedTexture2D::4935540521200097943::1791393037::1791464059::1::::<><><>0<>0<>b57e760e413dc988c19e2807b06adee5<>res://.godot/imported/beer.png-de03d288ae03d0641ad4ef36c5f87850.ctex::
-::res://sprites/broccoli/::1791463854
+beer_animations.tres::SpriteFrames::6001871648698258214::1791468563::0::1::::<><><>0<>0<><>::uid://cck2vp1lef7nv::::res://sprites/beer/beer.png
+::res://sprites/broccoli/::1791468619
+broccoli_animations.tres::SpriteFrames::7349726072753013207::1791468612::0::1::::<><><>0<>0<><>::uid://dklthporwyayo::::res://sprites/banana/banana main 1.png<>uid://djbmnho6uj1un::::res://sprites/banana/banana main 2.png<>uid://lkr3adxkjkmr::::res://sprites/banana/banana main 3.png<>uid://pso8pd4dahi1::::res://sprites/banana/banana splat 1.png<>uid://ce5nsgq6jgeof::::res://sprites/banana/banana splat 2.png<>uid://n1ypch6vwjyw::::res://sprites/banana/banana splat 3.png
 brocolli.png::CompressedTexture2D::6401736472029610671::1791389987::1791464059::1::::<><><>0<>0<>0c5ba9449cef8a1e260efb8ec19b66d5<>res://.godot/imported/brocolli.png-011755f18fb62b82cb26ee432fcc2ed0.ctex::
-::res://sprites/candycorn/::1791463806
+::res://sprites/candycorn/::1791464065
 candy corn.png::CompressedTexture2D::5802251212250141055::1791390027::1791464059::1::::<><><>0<>0<>8f4d12054594f2932ae97189f91db9b2<>res://.godot/imported/candy corn.png-ba8f1d8d0146c6f95970347828a8f424.ctex::
-::res://sprites/chocolate/::1791463708
+::res://sprites/chocolate/::1791464065
 chocolate.png::CompressedTexture2D::7444613872791925276::1791394188::1791464059::1::::<><><>0<>0<>08b2119183e9cf2bba86e983ccbb2eb0<>res://.godot/imported/chocolate.png-c71b82d1f180d183d5fe62177fe885e1.ctex::
-::res://sprites/cola/::1791463736
+::res://sprites/cola/::1791464063
 cola.png::CompressedTexture2D::960977668078891500::1791393377::1791464059::1::::<><><>0<>0<>8bfb478ac4dea4c20fe1fce48cced8f0<>res://.godot/imported/cola.png-ec0fd818a6dba0160d66d6c708c9a786.ctex::
-::res://sprites/corn/::1791463603
+::res://sprites/corn/::1791464065
 corn.png::CompressedTexture2D::9158256297276946338::1791397270::1791464059::1::::<><><>0<>0<>f5b9d9108917bf6aa0f861a7f610445b<>res://.godot/imported/corn.png-62c4d604ceae673b52a16f9c8361ff4a.ctex::
-::res://sprites/durian/::1791463781
+::res://sprites/durian/::1791464065
 orange.png::CompressedTexture2D::3049354505666937747::1791390064::1791464059::1::::<><><>0<>0<>d613553202a3252b897a4da46da3b31d<>res://.godot/imported/orange.png-8406d0d7f908a1248b62b9071adaf535.ctex::
 ::res://sprites/eat/::1790473574
 eat1.png::CompressedTexture2D::6829641879072599611::1790473532::1790473532::1::::<><><>0<>0<>e6d8631dcaeef5b56ba7240535b8940b<>res://.godot/imported/eat1.png-03326edb7259cada7c3994bd2c5a2d1e.ctex::
@@ -102,7 +121,7 @@ intro_animation-27.png::CompressedTexture2D::8120465863190457263::1790473532::17
 sushi-1.png::CompressedTexture2D::6885267722541961820::1790473532::1790473532::1::::<><><>0<>0<>b9293ccac973aaf61b71b5befa6efcae<>res://.godot/imported/sushi-1.png-a2fe85fc27221d0e4dc395cfa770b6e2.ctex::
 sushi-2.png::CompressedTexture2D::2564887451879581313::1790473532::1790473532::1::::<><><>0<>0<>7ca4765548f43f62f39f0562c14d8c9c<>res://.godot/imported/sushi-2.png-e97e8e130728551fff591c94c70c2cb1.ctex::
 sushi-3.png::CompressedTexture2D::1760675959830776714::1790473532::1790473532::1::::<><><>0<>0<>6f9b10bfb15c1c4913ef4677f289b7ca<>res://.godot/imported/sushi-3.png-f084a9f3ee413e4c8780bed8b08c953e.ctex::
-::res://sprites/lemon/::1791463825
+::res://sprites/lemon/::1791464065
 lemon.png::CompressedTexture2D::2122018070672600466::1791390013::1791464059::1::::<><><>0<>0<>e6b9d4f228c9f786c50dd05a9d6da19f<>res://.godot/imported/lemon.png-c5e69b22c6f9a6fc57284e700072ca01.ctex::
 ::res://sprites/pepper/::1790473574
 green 1.png::CompressedTexture2D::230172985061862621::1789582300::1789582300::1::::<><><>0<>0<>690be9865b5410129fce5560eab3312d<>res://.godot/imported/green 1.png-528d23bffb42111cc5e266ffd198e145.ctex::
@@ -141,9 +160,9 @@ peppermint 2.png::CompressedTexture2D::7044076640726878309::1790473532::17904735
 peppermint 3.png::CompressedTexture2D::5052325436501808159::1790473532::1790473532::1::::<><><>0<>0<>dbffd03c228a2785afb6de559e10d6ef<>res://.godot/imported/peppermint 3.png-34eae84fcb1eb96642111b797d07a271.ctex::
 peppermint 4.png::CompressedTexture2D::7440955275529138245::1790473532::1790473532::1::::<><><>0<>0<>2ad23fc1cd7ddd3e22d6d287ca6ad662<>res://.godot/imported/peppermint 4.png-ba90c610c05dbe551e79af1a0d05ffb5.ctex::
 peppermint 5.png::CompressedTexture2D::5282936223092433208::1790473533::1790473533::1::::<><><>0<>0<>82d7c94386af0d5f387629cd0f9c3340<>res://.godot/imported/peppermint 5.png-5e5233ea143dad8b469ebce4bbbe759d.ctex::
-::res://sprites/pizza/::1791463637
+::res://sprites/pizza/::1791464065
 pizza.png::CompressedTexture2D::1342335995071169900::1791394666::1791464059::1::::<><><>0<>0<>3e476d5721258e8c53a35bdcc7414b5e<>res://.godot/imported/pizza.png-a921eb68e61708f5709ab59296668f08.ctex::
-::res://sprites/popcorn/::1791463838
+::res://sprites/popcorn/::1791464065
 popcorn.png::CompressedTexture2D::1966856312523690506::1791390000::1791464059::1::::<><><>0<>0<>a6c9d6d11becef2197ce170c8fa35e54<>res://.godot/imported/popcorn.png-834b85fd3901c5859cdf8dbdc005b52d.ctex::
 ::res://sprites/ready/::1790473559
 ready.png::CompressedTexture2D::6534933025884823795::1790473533::1790473533::1::::<><><>0<>0<>eeb1148c8b1b455c4052e12fa2cd872c<>res://.godot/imported/ready.png-8b8c7b34a7cec27d46a420d01851f80f.ctex::
@@ -163,7 +182,7 @@ Untitled 2 2 3.png::CompressedTexture2D::983390561899665471::1790473533::1790473
 Untitled 2 2 1.png::CompressedTexture2D::5279259495706121066::1790473533::1790473533::1::::<><><>0<>0<>b618c025216cd128f30d0a19b0e1dbd9<>res://.godot/imported/Untitled 2 2 1.png-67fe08560ef3093a4bdee2b1705ce4e6.ctex::
 Untitled 2 2 2.png::CompressedTexture2D::4720458011543175883::1790473533::1790473533::1::::<><><>0<>0<>697fa1c2e5a0011d980a512b197c20cf<>res://.godot/imported/Untitled 2 2 2.png-168f1260a0b23adc7624311d0736a51f.ctex::
 Untitled 2 2 3.png::CompressedTexture2D::256283010466817723::1790473533::1790473533::1::::<><><>0<>0<>7bf17fa35e5a3e62ecdd1b933a007c37<>res://.godot/imported/Untitled 2 2 3.png-d32e3bed34f9a29f9d7a3e53fbfac5d8.ctex::
-::res://sprites/strawberry/::1791463794
+::res://sprites/strawberry/::1791464065
 strawberry.png::CompressedTexture2D::5515557476737266870::1791390050::1791464059::1::::<><><>0<>0<>13929a5d0114dd3c81e1dd2624adc07c<>res://.godot/imported/strawberry.png-cbb25b1e8e46afa90e360227b89745d6.ctex::
 ::res://sprites/title screen/::1790473567
 intro_animation-1.png::CompressedTexture2D::5135805084934943351::1790473533::1790473533::1::::<><><>0<>0<>560ada7d900c81b809cf2996ac39624d<>res://.godot/imported/intro_animation-1.png-8f8c3c9c3622874f91c4d771732d0aad.ctex::
@@ -175,9 +194,9 @@ sushi-2.png::CompressedTexture2D::293503398392737298::1790473533::1790473533::1:
 sushi-3.png::CompressedTexture2D::1595679066344635629::1790473533::1790473533::1::::<><><>0<>0<>c62dea485622ef195bdffb650579a482<>res://.godot/imported/sushi-3.png-9b6eb96dd73e9ee521d6df76245ea8ac.ctex::
 ::res://sprites/toilet/fire/::1790473559
 sushi-2.png::CompressedTexture2D::765100111958660017::1790473533::1790473533::1::::<><><>0<>0<>d57601a80bc91aeaadefe7db202a4968<>res://.godot/imported/sushi-2.png-0270a08a7f812da543d4fd70a5a62755.ctex::
-::res://sprites/vendingmachine/::1791463585
+::res://sprites/vendingmachine/::1791464075
 Untitled_Artwork-1.jpeg::CompressedTexture2D::4727648408808504192::1791401801::1791464060::1::::<><><>0<>0<>813adbc5a8dc52585c311fab27bc0ddf<>res://.godot/imported/Untitled_Artwork-1.jpeg-bbd9825b08e8b2953ec1a6372858c1e0.ctex::
 Untitled_Artwork-2.png::CompressedTexture2D::2353523004607709623::1791401800::1791464059::1::::<><><>0<>0<>35084a85bb8a33d836c97bf14a485b63<>res://.godot/imported/Untitled_Artwork-2.png-0fda0923105a97932be8ce197ee76412.ctex::
 Untitled_Artwork-3.png::CompressedTexture2D::6110187157526597699::1791401799::1791464059::1::::<><><>0<>0<>94a5b5739e114e6299ee4bbddd0fc6b6<>res://.godot/imported/Untitled_Artwork-3.png-799c14abe3f2597c1d5dbd61a1e528f7.ctex::
-::res://sprites/watermelon/::1791463619
+::res://sprites/watermelon/::1791464065
 meloncia.png::CompressedTexture2D::8044691528962930855::1791396654::1791464059::1::::<><><>0<>0<>3c71b555278245aa29be7978487818ca<>res://.godot/imported/meloncia.png-501c339fde01e24af6cc8c0d4c25dd0e.ctex::

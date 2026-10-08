@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cbmwraf7smpln"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_ouu2l"]
+[ext_resource type="SpriteFrames" uid="uid://cob65uiupyfkb" path="res://sprites/popcorn/popcorn_animations.tres" id="2_ouu2l"]
+
+[resource]
+script = ExtResource("1_ouu2l")
+food_name = "popcorn"
+sprite_frames = ExtResource("2_ouu2l")
+money = -1
+popularity = 4
+metadata/_custom_type_script = "uid://beujfqord0qj0"

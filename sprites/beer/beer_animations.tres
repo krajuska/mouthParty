@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://crrl7jifs7wti"]
+
+[ext_resource type="Texture2D" uid="uid://cck2vp1lef7nv" path="res://sprites/beer/beer.png" id="1_6nu3u"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6nu3u")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6nu3u")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6nu3u")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

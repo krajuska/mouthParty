@@ -3,9 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://0imqh04es164" path="res://sprites/peppermint/Peppermint rotate  1.png" id="4_w6l1b"]
 [ext_resource type="Texture2D" uid="uid://b2bvsegaljn7o" path="res://sprites/peppermint/Peppermint rotate  2.png" id="5_7us7m"]
 [ext_resource type="Texture2D" uid="uid://c4l7pvmx5o05v" path="res://sprites/peppermint/Peppermint rotate  3.png" id="6_k8e5g"]
+[ext_resource type="Texture2D" uid="uid://b4i0lhal3i2u3" path="res://sprites/peppermint/splat/peppermint 1.png" id="7_nhj6e"]
 [ext_resource type="Texture2D" uid="uid://qp2x604qcb8l" path="res://sprites/peppermint/Peppermint rotate  4.png" id="7_nm68j"]
+[ext_resource type="Texture2D" uid="uid://c7mg6btjr0qk0" path="res://sprites/peppermint/splat/peppermint 2.png" id="8_an01n"]
 [ext_resource type="Texture2D" uid="uid://c04i6lop17dk" path="res://sprites/peppermint/Peppermint rotate  5.png" id="8_hig7i"]
 [ext_resource type="Texture2D" uid="uid://c0t80mcorbi6i" path="res://sprites/peppermint/Peppermint rotate  6.png" id="9_s0emk"]
+[ext_resource type="Texture2D" uid="uid://cd8ncdon11t7d" path="res://sprites/peppermint/splat/peppermint 3.png" id="9_w6l1b"]
+[ext_resource type="Texture2D" uid="uid://deappf4paavvh" path="res://sprites/peppermint/splat/peppermint 4.png" id="10_7us7m"]
+[ext_resource type="Texture2D" uid="uid://chjdgnbh86n0k" path="res://sprites/peppermint/splat/peppermint 5.png" id="11_k8e5g"]
 
 [resource]
 animations = [{
@@ -37,7 +42,34 @@ animations = [{
 "name": &"idle",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_nhj6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_an01n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_w6l1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7us7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_k8e5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7us7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_w6l1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_an01n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nhj6e")
+}],
 "loop": 1,
 "name": &"splat",
 "speed": 5.0

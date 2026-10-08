@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://dvehguju7y10s"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_tvwn1"]
+[ext_resource type="SpriteFrames" uid="uid://bvmfmk3oepe52" path="res://sprites/lemon/lemon_animations.tres" id="2_tvwn1"]
+
+[resource]
+script = ExtResource("1_tvwn1")
+food_name = "lemon"
+sprite_frames = ExtResource("2_tvwn1")
+metadata/_custom_type_script = "uid://beujfqord0qj0"

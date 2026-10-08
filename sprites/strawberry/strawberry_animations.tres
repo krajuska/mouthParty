@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cbeapwjkuhpfs"]
+
+[ext_resource type="Texture2D" uid="uid://ckt1oqh8w0vcw" path="res://sprites/strawberry/strawberry.png" id="1_33f0k"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_33f0k")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_33f0k")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_33f0k")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

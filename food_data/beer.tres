@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://dyorwowpm5sk1"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_cmliy"]
+[ext_resource type="SpriteFrames" uid="uid://cwi635rw8ouu4" path="res://beer_animation.tres" id="2_cmliy"]
+
+[resource]
+script = ExtResource("1_cmliy")
+food_name = "beer"
+sprite_frames = ExtResource("2_cmliy")
+trouble = 1
+money = 2
+popularity = 3
+metadata/_custom_type_script = "uid://beujfqord0qj0"

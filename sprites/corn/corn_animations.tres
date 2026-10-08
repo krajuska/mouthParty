@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b5njgth2jvawv"]
+
+[ext_resource type="Texture2D" uid="uid://d3qle4rqeo7uk" path="res://sprites/corn/corn.png" id="1_nbxfr"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nbxfr")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nbxfr")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_nbxfr")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

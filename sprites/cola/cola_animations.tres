@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://cgmgyk1ad2rgs"]
+
+[ext_resource type="Texture2D" uid="uid://nxrfrbdmlipw" path="res://sprites/cola/cola.png" id="1_layvb"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_layvb")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_layvb")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_layvb")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]
