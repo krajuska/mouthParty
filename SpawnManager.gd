@@ -10,16 +10,25 @@ const MAX_LEVEL := 6
 const SPAWN_POSITION := Vector2(1042, 80)
 const FOOD_FOLDER := "res://food_data/"
 const SCORE_LIMITS := {
-	"bully": 3,
-	"peace": 100
+	"trouble" = 3,
+	"max_capacity" = MAX_LEVEL
 }
 
 var food_list: Array[FoodData] = []
 var current_food: CharacterBody2D = null
 var game_over := false
 var scores := {
-	"bully": 0,
-	"peace": 0
+	"trouble" = 0,
+	"money" = 0,
+	"popularity" = 0,
+	"star" = 0,
+	"kick" = 0,
+	"taxi" = 0,
+	"peek" = 0,
+	"brings_friend" = 0,
+	"full_house_bonus" = 0,
+	"dancing_bonus" = 0,
+	"people" = 0
 }
 
 func _ready() -> void:
@@ -69,14 +78,22 @@ func score_points(body: Node) -> void:
 	var food: FoodData = body.food_data
 	if food == null:
 		return
-	scores["bully"]       += food.bully
-	scores["bully"]       -= food.peace
+		
+	scores["trouble"]       	 += food.trouble
+	scores["money"]        		 += food.money
+	scores["popularity"]         += food.popularity
+	scores["star"]       		 += 1 if food.star else 0
+	scores["kick"]       		 += 1 if food.kick else 0
+	scores["taxi"]       		 += 1 if food.taxi else 0
+	scores["peek"]       		 += 1 if food.peek else 0
+	scores["brings_friend"]      = food.brings_friend
+	scores["full_house_bonus"]   += 1 if food.full_house_bonus else 0
+	scores["dancing_bonus"]      += 1 if food.dancing_bonus else 0
+	scores["people"]			 += 2 if food.brings_friend else 0
 	scores_updated.emit(scores)
 	
-	
 func check_stop_conditions() -> bool:
-	for score_key in scores.keys():
-		if scores[score_key] >= SCORE_LIMITS[score_key]:
-			return true
+	if scores["trouble"] >= SCORE_LIMITS["trouble"] || scores["people"] >= SCORE_LIMITS["max_capacity"]:
+		return true
 	can_eat.emit(true)
 	return false

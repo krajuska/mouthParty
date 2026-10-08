@@ -4,7 +4,7 @@ extends Node2D
 @onready var can_eat: bool = true
 
 var previous_scores := {
-	"bully": 0
+	"trouble": 0
 }
 
 func _ready() -> void:
@@ -16,14 +16,7 @@ func _ready() -> void:
 func _on_scores_updated(new_scores: Dictionary) -> void:
 	var lines: Array[String] = []
 	for key in new_scores.keys():
-		var delta: int = new_scores[key] - previous_scores.get(key, 0)
-		var sign_str: String  
-		if delta > 0:
-			sign_str = "+"
-		else:
-			sign_str = ""
-			
-		lines.append("%s: %s%d // Total: %d)" % [key.capitalize(), sign_str, delta, new_scores[key]])
+		lines.append("%s: %d" % [key.capitalize(), new_scores[key]])
 	
 	if lines.size() > 0:
 		score_label.text = "\n".join(lines)
