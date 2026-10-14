@@ -7,4 +7,5 @@
 script = ExtResource("1_a708r")
 food_name = "banana"
 sprite_frames = ExtResource("2_nx0hf")
+popularity = 4
 metadata/_custom_type_script = "uid://beujfqord0qj0"

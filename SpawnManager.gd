@@ -15,6 +15,10 @@ const SCORE_LIMITS := {
 }
 
 var food_list: Array[FoodData] = []
+var level_food_list: Array[String] = ["fries", "fries", #2 money guys
+									  "banana", "banana", "banana", "banana", #4 trouble guys
+									  "garlic", "garlic", "garlic", "garlic"] #4 regular guys
+var pool: Array[String] = []
 var current_food: CharacterBody2D = null
 var game_over := false
 var scores := {
@@ -35,6 +39,9 @@ func _ready() -> void:
 	_load_all_foods()
 	
 func _load_all_foods() -> void:
+	pool = level_food_list.duplicate()
+	pool.shuffle()
+
 	var dir := DirAccess.open(FOOD_FOLDER)
 	if dir == null:
 		push_error("Could not open food data folder")
@@ -45,7 +52,9 @@ func _load_all_foods() -> void:
 		if file_name.ends_with(".tres"):
 			var res: Resource = load(FOOD_FOLDER + file_name)
 			if res is FoodData:
-				food_list.append(res)
+				if pool.has(res.food_name):
+					pool.pop_back()
+					food_list.append(res)
 		file_name = dir.get_next()
 	dir.list_dir_end()
 	
@@ -89,7 +98,7 @@ func score_points(body: Node) -> void:
 	scores["brings_friend"]      = food.brings_friend
 	scores["full_house_bonus"]   += 1 if food.full_house_bonus else 0
 	scores["dancing_bonus"]      += 1 if food.dancing_bonus else 0
-	scores["people"]			 += 2 if food.brings_friend else 0
+	scores["people"]			 += 2 if food.brings_friend else +1
 	scores_updated.emit(scores)
 	
 func check_stop_conditions() -> bool:
