@@ -1,3 +1,4 @@
-res://scenes/game.tscn
+res://scenes/game.gd
 res://SpawnManager.gd
-res://food_data/banana.tres
+res://scenes/game.tscn
+res://food_data/food.gd

@@ -98,7 +98,7 @@ func score_points(body: Node) -> void:
 	scores["brings_friend"]      = food.brings_friend
 	scores["full_house_bonus"]   += 1 if food.full_house_bonus else 0
 	scores["dancing_bonus"]      += 1 if food.dancing_bonus else 0
-	scores["people"]			 += 2 if food.brings_friend else +1
+	scores["people"]			 += food.brings_friend if food.brings_friend > 0 else +1
 	scores_updated.emit(scores)
 	
 func check_stop_conditions() -> bool:

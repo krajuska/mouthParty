@@ -3,10 +3,6 @@ extends Node2D
 @onready var score_label: RichTextLabel = $RichTextLabel
 @onready var can_eat: bool = true
 
-var previous_scores := {
-	"trouble": 0
-}
-
 func _ready() -> void:
 	SpawnManager.scores_updated.connect(_on_scores_updated)
 	SpawnManager.space_bar_pressed.connect(_on_spacebar_pressed)
@@ -20,7 +16,6 @@ func _on_scores_updated(new_scores: Dictionary) -> void:
 	
 	if lines.size() > 0:
 		score_label.text = "\n".join(lines)
-	previous_scores = new_scores.duplicate()
 
 func _on_spacebar_pressed(_pressed: bool) -> void:
 	if can_eat:

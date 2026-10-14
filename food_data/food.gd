@@ -11,5 +11,5 @@ extends Resource
 @export var taxi: bool = false
 @export var peek: bool = false
 @export var full_house_bonus: bool = false
-@export var brings_friend: bool = false
+@export var brings_friend: int = 0
 @export var dancing_bonus: bool = false
