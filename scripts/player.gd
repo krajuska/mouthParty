@@ -4,7 +4,7 @@ extends CharacterBody2D
 @export var level: int = 0
 var has_triggered := false # prevents spawning every physics frame while still touching
 
-const SPEED = 300.0
+const SPEED = 400.0
 const DOWN_VELOCITY = Vector2(0, 0.5)
 
 var food_data: FoodData = null

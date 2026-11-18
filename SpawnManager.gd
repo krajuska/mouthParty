@@ -14,11 +14,11 @@ const SCORE_LIMITS := {
 	"max_capacity" = MAX_LEVEL
 }
 
-var food_list: Array[FoodData] = []
+var food_by_name: Dictionary = {} # String -> FoodData
+var pool: Array[String] = []
 var level_food_list: Array[String] = ["fries", "fries", #2 money guys
 									  "banana", "banana", "banana", "banana", #4 trouble guys
 									  "garlic", "garlic", "garlic", "garlic"] #4 regular guys
-var pool: Array[String] = []
 var current_food: CharacterBody2D = null
 var game_over := false
 var scores := {
@@ -37,26 +37,32 @@ var scores := {
 
 func _ready() -> void:
 	_load_all_foods()
+	_refill_pool()
+
 	
 func _load_all_foods() -> void:
-	pool = level_food_list.duplicate()
-	pool.shuffle()
-
+	food_by_name.clear()
 	var dir := DirAccess.open(FOOD_FOLDER)
 	if dir == null:
 		push_error("Could not open food data folder")
 		return
+
 	dir.list_dir_begin()
 	var file_name := dir.get_next()
 	while file_name != "":
+		# exported builds list resources as "x.tres.remap"
+		file_name = file_name.trim_suffix(".remap")
 		if file_name.ends_with(".tres"):
 			var res: Resource = load(FOOD_FOLDER + file_name)
 			if res is FoodData:
-				if pool.has(res.food_name):
-					pool.pop_back()
-					food_list.append(res)
+				food_by_name[res.food_name] = res
 		file_name = dir.get_next()
 	dir.list_dir_end()
+
+func _refill_pool() -> void:
+	pool = level_food_list.duplicate()
+	pool.shuffle()
+
 	
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("eat"):
@@ -66,11 +72,17 @@ func spawn_new() -> CharacterBody2D:
 	can_eat.emit(false)
 	if game_over:
 		return null
+	if pool.is_empty():
+		return null # every food in the level has been spawned
+
+	var food_name: String = pool.pop_back()
+	var chosen_food: FoodData = food_by_name.get(food_name)
+	if chosen_food == null:
+		push_error("No FoodData found for '%s'" % food_name)
+		return null
 
 	var new_body = character_scene.instantiate()
 	new_body.global_position = SPAWN_POSITION
-
-	var chosen_food: FoodData = food_list[randi() % food_list.size()]
 	new_body.food_data = chosen_food
 
 	get_tree().current_scene.add_child(new_body)

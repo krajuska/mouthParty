@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctb25ityj8re6"
-path="res://.godot/imported/Untitled_Artwork-3.png-799c14abe3f2597c1d5dbd61a1e528f7.ctex"
+uid="uid://bvotmu0nbab01"
+path="res://.godot/imported/walk_to_vend-3.png-06f23b9ed18408fd2b3e5e8ed65b257c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/vendingmachine/Untitled_Artwork-3.png"
-dest_files=["res://.godot/imported/Untitled_Artwork-3.png-799c14abe3f2597c1d5dbd61a1e528f7.ctex"]
+source_file="res://sprites/vendingmachine/walk_to_vend-3.png"
+dest_files=["res://.godot/imported/walk_to_vend-3.png-06f23b9ed18408fd2b3e5e8ed65b257c.ctex"]
 
 [params]
 
