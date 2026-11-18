@@ -1,0 +1,78 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ypfvappav31g"]
+
+[ext_resource type="Texture2D" uid="uid://bf4n0luxlvg4k" path="res://sprites/fries/falling/fries falling 1.png" id="1_fygor"]
+[ext_resource type="Texture2D" uid="uid://cumuy21igh1r8" path="res://sprites/fries/falling/fries falling 2.png" id="2_qosxx"]
+[ext_resource type="Texture2D" uid="uid://cbtc35n88qrcj" path="res://sprites/fries/falling/fries falling 3.png" id="3_mjo6s"]
+[ext_resource type="Texture2D" uid="uid://bmsioxud27sf3" path="res://sprites/fries/falling/fries falling 4.png" id="4_81b1x"]
+[ext_resource type="Texture2D" uid="uid://83totxd2r2th" path="res://sprites/fries/idle/fries 1.png" id="5_7ncwy"]
+[ext_resource type="Texture2D" uid="uid://yuunc8v2uwju" path="res://sprites/fries/idle/fries 2.png" id="6_3wtw4"]
+[ext_resource type="Texture2D" uid="uid://3aq6ym3hhq4e" path="res://sprites/fries/idle/fries 3.png" id="7_wjk65"]
+[ext_resource type="Texture2D" uid="uid://bxdtobf0oelyd" path="res://sprites/fries/idle/fries 4.png" id="8_rpjxi"]
+[ext_resource type="Texture2D" uid="uid://cwudgv0dmhmf6" path="res://sprites/fries/idle/fries 5.png" id="9_34p25"]
+[ext_resource type="Texture2D" uid="uid://ct0h4tt28xpyn" path="res://sprites/fries/idle/fries 6.png" id="10_iu8x0"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fygor")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qosxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_mjo6s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_81b1x")
+}],
+"loop": 1,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_7ncwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3wtw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wjk65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rpjxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_34p25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iu8x0")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_7ncwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3wtw4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wjk65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_rpjxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_34p25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_iu8x0")
+}],
+"loop": 1,
+"name": &"splat",
+"speed": 5.0
+}]

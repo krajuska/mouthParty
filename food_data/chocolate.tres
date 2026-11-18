@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://byrjm0b2kjk1v"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_st5ah"]
+[ext_resource type="SpriteFrames" uid="uid://ce6qtqb77aic1" path="res://sprites/chocolate/chocolate_animations.tres" id="2_st5ah"]
+
+[resource]
+script = ExtResource("1_st5ah")
+food_name = "chocolate"
+sprite_frames = ExtResource("2_st5ah")
+star = true
+metadata/_custom_type_script = "uid://beujfqord0qj0"

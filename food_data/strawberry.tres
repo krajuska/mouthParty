@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cwmw01vv65pgq"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_1cjmn"]
+[ext_resource type="SpriteFrames" uid="uid://cbeapwjkuhpfs" path="res://sprites/strawberry/strawberry_animations.tres" id="2_1cjmn"]
+
+[resource]
+script = ExtResource("1_1cjmn")
+food_name = "strawberry"
+sprite_frames = ExtResource("2_1cjmn")
+popularity = 3
+brings_friend = true
+metadata/_custom_type_script = "uid://beujfqord0qj0"

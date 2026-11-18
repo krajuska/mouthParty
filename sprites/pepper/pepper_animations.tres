@@ -8,7 +8,22 @@
 
 [resource]
 animations = [{
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2x88w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pjb6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_djam2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i0tme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_or0gr")
+}],
 "loop": 1,
 "name": &"falling",
 "speed": 5.0
@@ -33,7 +48,22 @@ animations = [{
 "name": &"idle",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2x88w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pjb6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_djam2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i0tme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_or0gr")
+}],
 "loop": 1,
 "name": &"splat",
 "speed": 5.0

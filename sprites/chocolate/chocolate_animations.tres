@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://ce6qtqb77aic1"]
+
+[ext_resource type="Texture2D" uid="uid://dechx5pmtah5u" path="res://sprites/chocolate/chocolate.png" id="1_3dmrt"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3dmrt")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3dmrt")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3dmrt")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

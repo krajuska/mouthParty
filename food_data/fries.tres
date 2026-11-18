@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cf3ehp7q0ks1l"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_umwse"]
+[ext_resource type="SpriteFrames" uid="uid://ypfvappav31g" path="res://sprites/fries/fries_animations.tres" id="2_umwse"]
+
+[resource]
+script = ExtResource("1_umwse")
+food_name = "fries"
+sprite_frames = ExtResource("2_umwse")
+money = 1
+metadata/_custom_type_script = "uid://beujfqord0qj0"

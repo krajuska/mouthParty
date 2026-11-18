@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://cj4nm63cixx0v"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_0b2eg"]
+[ext_resource type="SpriteFrames" uid="uid://dcyi6dj3bfkup" path="res://sprites/broccoli/broccoli_animations.tres" id="2_0b2eg"]
+
+[resource]
+script = ExtResource("1_0b2eg")
+food_name = "broccoli"
+sprite_frames = ExtResource("2_0b2eg")
+taxi = true
+metadata/_custom_type_script = "uid://beujfqord0qj0"

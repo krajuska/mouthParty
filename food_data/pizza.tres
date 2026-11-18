@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://daets128y8ocq"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_5jm0i"]
+[ext_resource type="SpriteFrames" uid="uid://cf3qbp2qhllbt" path="res://sprites/lemon/pizza_animations.tres" id="2_5jm0i"]
+
+[resource]
+script = ExtResource("1_5jm0i")
+food_name = "pizza"
+sprite_frames = ExtResource("2_5jm0i")
+money = 3
+metadata/_custom_type_script = "uid://beujfqord0qj0"

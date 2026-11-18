@@ -1,0 +1,60 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://coh8ic6ehi6gf"]
+
+[ext_resource type="Texture2D" uid="uid://cq1oclldd07q8" path="res://sprites/garlic/garlic 1.png" id="1_s03mc"]
+[ext_resource type="Texture2D" uid="uid://bnjh8hqpl7fii" path="res://sprites/garlic/garlic 2.png" id="2_7tuxd"]
+[ext_resource type="Texture2D" uid="uid://ufjv5plgx3xh" path="res://sprites/garlic/garlic 3.png" id="3_51o0q"]
+[ext_resource type="Texture2D" uid="uid://do3yvupcldsu3" path="res://sprites/garlic/garlic 4.png" id="4_42at5"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s03mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7tuxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_51o0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_42at5")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s03mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7tuxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_51o0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_42at5")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s03mc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_7tuxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_51o0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_42at5")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]

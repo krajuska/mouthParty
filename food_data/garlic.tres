@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://bbewnrrci1yw"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_n4tja"]
+[ext_resource type="SpriteFrames" uid="uid://coh8ic6ehi6gf" path="res://sprites/garlic/garlic_animations.tres" id="2_n4tja"]
+
+[resource]
+script = ExtResource("1_n4tja")
+food_name = "garlic"
+sprite_frames = ExtResource("2_n4tja")
+popularity = 1
+metadata/_custom_type_script = "uid://beujfqord0qj0"

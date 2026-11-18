@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="FoodData" format=3 uid="uid://csl1ncv80ln1u"]
+
+[ext_resource type="Script" uid="uid://beujfqord0qj0" path="res://food_data/food.gd" id="1_w71ut"]
+[ext_resource type="SpriteFrames" uid="uid://b5njgth2jvawv" path="res://sprites/corn/corn_animations.tres" id="2_w71ut"]
+
+[resource]
+script = ExtResource("1_w71ut")
+food_name = "corn"
+sprite_frames = ExtResource("2_w71ut")
+trouble = 1
+metadata/_custom_type_script = "uid://beujfqord0qj0"

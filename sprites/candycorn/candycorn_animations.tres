@@ -1,0 +1,30 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://l6k1a6v0xisy"]
+
+[ext_resource type="Texture2D" uid="uid://cowwh2t7ghih0" path="res://sprites/candycorn/candy corn.png" id="1_cvgbf"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cvgbf")
+}],
+"loop": 0,
+"name": &"falling",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cvgbf")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cvgbf")
+}],
+"loop": 0,
+"name": &"splat",
+"speed": 5.0
+}]
