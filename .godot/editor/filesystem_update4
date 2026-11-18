@@ -1,0 +1,4 @@
+res://SpawnManager.gd
+res://food_data/food.gd
+res://scenes/game.gd
+res://scripts/player.gd
